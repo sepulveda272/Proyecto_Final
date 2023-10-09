@@ -79,7 +79,7 @@ function App() {
           </div>
         )}
 
-        {mostrarInicio && <Navigate to="/panel" />}
+        {mostrarInicio && <Navigate to="/presentacion" />}
       </header>
         
       <Routes>
