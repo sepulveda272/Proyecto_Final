@@ -4,7 +4,9 @@ function Inicio() {
   
   return (
     <div className='init'>
-      hola
+      <div className="form-container-present">
+            
+          </div>
     </div>
   );
 }

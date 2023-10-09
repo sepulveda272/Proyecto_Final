@@ -1,19 +1,66 @@
-body{
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
   background-color: black;
+}
+
+body::before {
+  content: "";
+  background-image: url('https://jungle-nectarine-cef.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8d0fd571-8a0f-45e2-8fc5-1a83818f8fc5%2F55f888fe-d3ca-4495-af79-ae001df9ed98%2Fpexels-pixabay-1594002x.png?table=block&id=9a33772d-2d5c-4d71-a5c7-767105d04aa1&spaceId=8d0fd571-8a0f-45e2-8fc5-1a83818f8fc5&width=1230&userId=&cache=v2');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.13;
+  z-index: -1;
 }
 
 
 
 .form-container {
-  top: 160px;
-  left: 492px;
   width: 936px;
   height: 761px;
   background: #fffdfd 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   border-radius: 67px;
-  opacity: 1;
+  opacity: 0;
   margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  animation: aparecer 1s ease-in-out forwards;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+  
+  .form-container-present {
+    width: 936px;
+    height: 549px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 67px;
+    opacity: 0;
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,5 +68,15 @@ body{
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
+    animation: aparecer 1s ease-in-out forwards;
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   

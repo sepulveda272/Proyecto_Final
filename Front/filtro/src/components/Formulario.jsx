@@ -11,7 +11,6 @@ const Formulario = () => {
     const handleIniciarClick = () => {
       setMostrarInicio(true);
   
-      // Después de 10 segundos, redirige a '/panel'
       setTimeout(() => {
         setRedirigir(true);
       }, 10000);
