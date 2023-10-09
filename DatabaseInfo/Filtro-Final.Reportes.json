@@ -12,6 +12,9 @@
   "FechaReparacion": {
     "$date": "2021-12-24T00:00:00.000Z"
   },
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
   "estado": true
 },
 {
@@ -26,6 +29,9 @@
   "Reparacion": 50,
   "Reparado": false,
   "FechaReparacion": null,
+  "Indicadores":{
+    "oid": "6524419af40776a48e9b0335"
+  },
   "estado": true
 },
 {
@@ -42,6 +48,9 @@
   "FechaReparacion": {
     "$date": "2021-10-20T00:00:00.000Z"
   },
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
   "estado": true
 },
 {
@@ -56,6 +65,9 @@
   "Reparacion": 70,
   "Reparado": false,
   "FechaReparacion": null,
+  "Indicadores":{
+    "oid": "6524419af40776a48e9b0335"
+  },
   "estado": true
 },
 {
@@ -72,6 +84,9 @@
   "FechaReparacion": {
     "$date": "2021-08-28T00:00:00.000Z"
   },
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
   "estado": true
 },
 {
@@ -86,6 +101,9 @@
   "Reparacion": 30,
   "Reparado": false,
   "FechaReparacion": null,
+  "Indicadores":{
+    "oid": "6524419af40776a48e9b0335"
+  },
   "estado": true
 },
 {
@@ -102,6 +120,9 @@
   "FechaReparacion": {
     "$date": "2021-11-20T00:00:00.000Z"
   },
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
   "estado": true
 },
 {
@@ -116,6 +137,9 @@
   "Reparacion": 80,
   "Reparado": false,
   "FechaReparacion": null,
+  "Indicadores":{
+    "oid": "6524419af40776a48e9b0335"
+  },
   "estado": true
 },
 {
@@ -132,6 +156,9 @@
   "FechaReparacion": {
     "$date": "2021-08-02T00:00:00.000Z"
   },
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
   "estado": true
 },
 {
@@ -146,5 +173,8 @@
   "Reparacion": 60,
   "Reparado": false,
   "FechaReparacion": null,
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
   "estado": true
 }]
