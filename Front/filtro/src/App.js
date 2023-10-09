@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Loading from './components/Loading';
-import Login from './components/Loging';
+import Login from './components/Panel';
 import './css/Login.css';
+import './css/Panel.css';
 
 function App() {
   const [loading, setLoading] = useState(true);

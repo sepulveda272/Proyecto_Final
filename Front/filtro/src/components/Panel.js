@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Loading from './Loading';
-import '../css/Loading.css';
+
 
 const Loging = () => {
     
