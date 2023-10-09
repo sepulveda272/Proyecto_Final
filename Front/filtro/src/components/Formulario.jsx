@@ -36,7 +36,7 @@ const Formulario = () => {
             <h3>Media</h3>
             </div>
             <h2>
-              Vienvenido al panel digital de
+              Bienvenido al panel digital de
               <br />
               KARIO Media
             </h2>
