@@ -1,17 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Navigate} from 'react-router-dom';
+import React, { useState } from 'react';
+import {Navigate} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Presentacion from './Presentacion'
 import '../css/Login.css';
 import '../css/Panel.css';
 
 
 const Formulario = () => {
-
     const [mostrarInicio, setMostrarInicio] = useState(false);
+    const [redirigir, setRedirigir] = useState(false);
 
     const handleIniciarClick = () => {
       setMostrarInicio(true);
+  
+      // Después de 10 segundos, redirige a '/panel'
+      setTimeout(() => {
+        setRedirigir(true);
+      }, 10000);
     };
+
+    if (redirigir) {
+      return <Navigate to="/panel" />;
+    }
 
     return (
         <div>
@@ -67,7 +77,10 @@ const Formulario = () => {
             </div>
           </div>
         )}
-
+        {mostrarInicio && (
+        // Muestra el componente Inicio después de 10 segundos
+        <Presentacion />
+      )}
       </header>
         </div>
     );
