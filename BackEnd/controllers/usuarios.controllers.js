@@ -19,5 +19,23 @@ export const getUsers = async (req,res)=>{
 }
 
 export const postUsers = async (req,res)=>{
+    const {usuario ,password} = req.body;
+    const users = new Usuarios({usuario, password});
+
+   
+     
+    // Encriptar nuestra contraseña
+    const salt = bcryptjs.genSaltSync();
+    users.password = bcryptjs.hashSync(password, salt);
+    
+    // Guardar en MONGODB
+    await users.save();
+    res.json({
+        "message":"post api",
+        users
+    })
+}
+
+export const deleteUsers = async (req,res)=>{
     
 }

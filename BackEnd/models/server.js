@@ -4,11 +4,13 @@ import {dbConnection} from '../database/config.js';
 import swaggerUI from 'swagger-ui-express';
 import swaggerSpec from '../swaggerConfig.js';
 
+import usuarios from '../routes/usuarios.routes.js'
+
 class Server{
     constructor(){
         this.app = express();
         this.port = process.env.PORT;
-        this.authPath = "/api/auth";
+        this.usuariosPath = "/api/usuarios";
         this.connectDB();
         this.middleware();
         this.routes();
@@ -24,6 +26,7 @@ class Server{
     }
 
     routes(){
+        this.app.use(this.usuariosPath, usuarios)
         this.app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
     }
 
