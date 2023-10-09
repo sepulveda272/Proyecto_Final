@@ -12,7 +12,7 @@
   "FechaReparacion": {
     "$date": "2021-12-24T00:00:00.000Z"
   },
-  "Estado": true
+  "estado": true
 },
 {
   "_id": {
@@ -26,7 +26,7 @@
   "Reparacion": 50,
   "Reparado": false,
   "FechaReparacion": null,
-  "Estado": true
+  "estado": true
 },
 {
   "_id": {
@@ -42,7 +42,7 @@
   "FechaReparacion": {
     "$date": "2021-10-20T00:00:00.000Z"
   },
-  "Estado": true
+  "estado": true
 },
 {
   "_id": {
@@ -56,7 +56,7 @@
   "Reparacion": 70,
   "Reparado": false,
   "FechaReparacion": null,
-  "Estado": true
+  "estado": true
 },
 {
   "_id": {
@@ -72,7 +72,7 @@
   "FechaReparacion": {
     "$date": "2021-08-28T00:00:00.000Z"
   },
-  "Estado": true
+  "estado": true
 },
 {
   "_id": {
@@ -86,7 +86,7 @@
   "Reparacion": 30,
   "Reparado": false,
   "FechaReparacion": null,
-  "Estado": true
+  "estado": true
 },
 {
   "_id": {
@@ -102,7 +102,7 @@
   "FechaReparacion": {
     "$date": "2021-11-20T00:00:00.000Z"
   },
-  "Estado": true
+  "estado": true
 },
 {
   "_id": {
@@ -116,7 +116,7 @@
   "Reparacion": 80,
   "Reparado": false,
   "FechaReparacion": null,
-  "Estado": true
+  "estado": true
 },
 {
   "_id": {
@@ -132,7 +132,7 @@
   "FechaReparacion": {
     "$date": "2021-08-02T00:00:00.000Z"
   },
-  "Estado": true
+  "estado": true
 },
 {
   "_id": {
@@ -146,5 +146,5 @@
   "Reparacion": 60,
   "Reparado": false,
   "FechaReparacion": null,
-  "Estado": true
+  "estado": true
 }]

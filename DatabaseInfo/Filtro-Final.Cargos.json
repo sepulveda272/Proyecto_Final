@@ -2,65 +2,76 @@
   "_id": {
     "$oid": "6520c404f40776a48e9b02f8"
   },
-  "Cargo": "Desarrollador de Software"
+  "Cargo": "Desarrollador de Software",
+  "estado": true
 },
 {
   "_id": {
     "$oid": "6520c404f40776a48e9b02f9"
   },
-  "Cargo": "Ingeniero de Software"
+  "Cargo": "Ingeniero de Software",
+  "estado": true
 },
 {
   "_id": {
     "$oid": "6520c404f40776a48e9b02fa"
   },
-  "Cargo": "Analista de Datos"
+  "Cargo": "Analista de Datos",
+  "estado": true
 },
 {
   "_id": {
     "$oid": "6520c404f40776a48e9b02fb"
   },
-  "Cargo": "Diseñador de UX/UI"
+  "Cargo": "Diseñador de UX/UI",
+  "estado": true
 },
 {
   "_id": {
     "$oid": "6520c404f40776a48e9b02fc"
   },
-  "Cargo": "Especialista en Seguridad Informática"
+  "Cargo": "Especialista en Seguridad Informática",
+  "estado": true
 },
 {
   "_id": {
     "$oid": "6520c404f40776a48e9b02fd"
   },
-  "Cargo": "Gerente de Proyecto de Software"
+  "Cargo": "Gerente de Proyecto de Software",
+  "estado": true
 },
 {
   "_id": {
     "$oid": "6520c404f40776a48e9b02fe"
   },
-  "Cargo": "Arquitecto de Software"
+  "Cargo": "Arquitecto de Software",
+  "estado": true
 },
 {
   "_id": {
     "$oid": "6520c404f40776a48e9b02ff"
   },
-  "Cargo": "QA Tester"
+  "Cargo": "QA Tester",
+  "estado": true
 },
 {
   "_id": {
     "$oid": "6520c404f40776a48e9b0300"
   },
-  "Cargo": "Administrador de Bases de Datos"
+  "Cargo": "Administrador de Bases de Datos",
+  "estado": true
 },
 {
   "_id": {
     "$oid": "6520c404f40776a48e9b0301"
   },
-  "Cargo": "Ingeniero de Redes"
+  "Cargo": "Ingeniero de Redes",
+  "estado": true
 },
 {
   "_id": {
     "$oid": "6520c404f40776a48e9b0302"
   },
-  "Cargo": "Gerente"
-}]
+  "Cargo": "Gerente",
+  "estado": true
+  }]
