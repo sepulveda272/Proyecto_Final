@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Loading from './components/Loading';
+<<<<<<< HEAD
 import Login from './components/Panel';
 import './css/Login.css';
 import './css/Panel.css';
+=======
+import Login from './components/Loging';
+
+>>>>>>> fab046e58e9d4dd918d6a1f94bb5618930fa839e
 
 function App() {
   const [loading, setLoading] = useState(true);
