@@ -12,7 +12,8 @@
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "1234567890",
   "Dirección": "Calle 123, Bogotá, Colombia",
-  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
+  "estado": true
 },
 {
   "_id": {
@@ -28,7 +29,8 @@
   "Tipo de Documento": "Cédula de Extranjería",
   "DNI": "2345678901",
   "Dirección": "Avenida 456, Medellín, Colombia",
-  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
+  "estado": true
 },
 {
   "_id": {
@@ -44,7 +46,8 @@
   "Tipo de Documento": "Pasaporte",
   "DNI": "3456789012",
   "Dirección": "Carrera 789, Cali, Colombia",
-  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
+  "estado": true
 },
 {
   "_id": {
@@ -60,7 +63,8 @@
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "4567890123",
   "Dirección": "Diagonal 1011, Barranquilla, Colombia",
-  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
+  "estado": true
 },
 {
   "_id": {
@@ -76,7 +80,8 @@
   "Tipo de Documento": "Cédula de Extranjería",
   "DNI": "5678901234",
   "Dirección": "Calle 1213, Bogotá, Colombia",
-  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
+  "estado": true
 },
 {
   "_id": {
@@ -92,7 +97,8 @@
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "6789012345",
   "Dirección": "Avenida 1617, Medellín, Colombia",
-  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
+  "estado": true
 },
 {
   "_id": {
@@ -108,7 +114,8 @@
   "Tipo de Documento": "Pasaporte",
   "DNI": "7890123456",
   "Dirección": "Carrera 1819, Cali, Colombia",
-  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
+  "estado": true
 },
 {
   "_id": {
@@ -124,7 +131,8 @@
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "8901234567",
   "Dirección": "Diagonal 2021, Bogotá, Colombia",
-  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
+  "estado": true
 },
 {
   "_id": {
@@ -140,7 +148,8 @@
   "Tipo de Documento": "Cédula de Extranjería",
   "DNI": "9012345678",
   "Dirección": "Calle 2223, Medellín, Colombia",
-  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
+  "estado": true
 },
 {
   "_id": {
@@ -156,7 +165,8 @@
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "0123456789",
   "Dirección": "Avenida 2425, Bogotá, Colombia",
-  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
+  "estado": true
 },
 {
   "_id": {
@@ -172,5 +182,6 @@
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "1234567890",
   "Dirección": "Carrera 2627, Cali, Colombia",
-  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
+  "estado": true
 }]

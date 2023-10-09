@@ -28,7 +28,8 @@
         }
       }
     ],
-    "Tareas": ["Terminar el renderizado", "Texturizar Casas"]
+    "Tareas": ["Terminar el renderizado", "Texturizar Casas"],
+    "estado": true
   },
   {
     "_id": {
@@ -59,7 +60,8 @@
         }
       }
     ],
-    "Tareas": ["Terminar el renderizado", "Texturizar Casas"]
+    "Tareas": ["Terminar el renderizado", "Texturizar Casas"],
+    "estado": true
   },
   {
     "_id": {
@@ -90,7 +92,8 @@
         }
       }
     ],
-    "Tareas": ["Analizar datos de ventas", "Ejecutar estrategias de marketing"]
+    "Tareas": ["Analizar datos de ventas", "Ejecutar estrategias de marketing"],
+    "estado": true
   },
   {
     "_id": {
@@ -124,7 +127,8 @@
     "Tareas": [
       "Realizar encuestas de satisfacción",
       "Analizar resultados de encuestas"
-    ]
+    ],
+    "estado": true
   },
   {
     "_id": {
@@ -158,7 +162,8 @@
     "Tareas": [
       "Evaluar la productividad individual",
       "Implementar mejoras en procesos de trabajo"
-    ]
+    ],
+    "estado": true
   },
   {
     "_id": {
@@ -192,7 +197,8 @@
     "Tareas": [
       "Registrar transacciones financieras",
       "Preparar estados financieros"
-    ]
+    ],
+    "estado": true
   },
   {
     "_id": {
@@ -226,7 +232,8 @@
     "Tareas": [
       "Optimizar procesos de entrega",
       "Realizar seguimiento de entregas"
-    ]
+    ],
+    "estado": true
   },
   {
     "_id": {
@@ -260,7 +267,8 @@
     "Tareas": [
       "Realizar conteo de inventario",
       "Gestionar pedidos de productos"
-    ]
+    ],
+    "estado": true
   },
   {
     "_id": {
@@ -294,7 +302,8 @@
     "Tareas": [
       "Realizar inspecciones de seguridad",
       "Implementar medidas de seguridad"
-    ]
+    ],
+    "estado": true
   },
   {
     "_id": {
@@ -328,7 +337,8 @@
     "Tareas": [
       "Analizar la satisfacción del cliente",
       "Implementar estrategias de retención"
-    ]
+    ],
+    "estado": true
   },
   {
     "_id": {
@@ -362,7 +372,8 @@
     "Tareas": [
       "Calcular el costo de adquisición",
       "Optimizar estrategias de adquisición"
-    ]
+    ],
+    "estado": true
   },
   {
     "_id": {
@@ -396,7 +407,8 @@
     "Tareas": [
       "Analizar métricas de marketing",
       "Optimizar campañas de marketing"
-    ]
+    ],
+    "estado": true
   },
   {
     "_id": {
@@ -430,7 +442,8 @@
     "Tareas": [
       "Calcular la tasa de rotación",
       "Implementar estrategias de retención de empleados"
-    ]
+    ],
+    "estado": true
   },
   {
     "_id": {
@@ -464,6 +477,7 @@
     "Tareas": [
       "Calcular el costo de producción",
       "Optimizar procesos de producción"
-    ]
+    ],
+    "estado": true
   }
 ]
