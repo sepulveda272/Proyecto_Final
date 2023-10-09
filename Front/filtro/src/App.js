@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Loading from './components/Loading';
 import Login from './components/Loging';
-import './css/Login.css';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
