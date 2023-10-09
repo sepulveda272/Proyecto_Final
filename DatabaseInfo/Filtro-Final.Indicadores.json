@@ -1,0 +1,469 @@
+[
+  {
+    "_id": {
+      "$oid": "65244039f40776a48e9b0331"
+    },
+    "Indicador": "Modelo 3D",
+    "Descripcion": "Interes por dice",
+    "Categoria": "Baja",
+    "FechaInicio": {
+      "$date": "2021-12-05T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-12T00:00:00.000Z"
+    },
+    "Formula": "Met.Agil",
+    "Frecuencia": "1/4",
+    "Cumplimiento": 31,
+    "Area": "Marketing",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0316"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0317"
+        }
+      }
+    ],
+    "Tareas": ["Terminar el renderizado", "Texturizar Casas"]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b0333"
+    },
+    "Indicador": "Modelo 3D",
+    "Descripcion": "Interés por diseño en 3D",
+    "Categoria": "Baja",
+    "FechaInicio": {
+      "$date": "2021-12-05T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-12T00:00:00.000Z"
+    },
+    "Formula": "Met.Agil",
+    "Frecuencia": "1/4",
+    "Cumplimiento": 31,
+    "Area": "Marketing",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0318"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0318"
+        }
+      }
+    ],
+    "Tareas": ["Terminar el renderizado", "Texturizar Casas"]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b0334"
+    },
+    "Indicador": "Ventas Mensuales",
+    "Descripcion": "Seguimiento de ventas por mes",
+    "Categoria": "Alta",
+    "FechaInicio": {
+      "$date": "2021-01-01T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-31T00:00:00.000Z"
+    },
+    "Formula": "Met.Ventas",
+    "Frecuencia": "1/1",
+    "Cumplimiento": 89,
+    "Area": "Ventas",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0318"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0318"
+        }
+      }
+    ],
+    "Tareas": ["Analizar datos de ventas", "Ejecutar estrategias de marketing"]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b0335"
+    },
+    "Indicador": "Satisfacción del Cliente",
+    "Descripcion": "Medición de la satisfacción del cliente",
+    "Categoria": "Media",
+    "FechaInicio": {
+      "$date": "2021-03-15T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-15T00:00:00.000Z"
+    },
+    "Formula": "Met.Encuesta",
+    "Frecuencia": "1/3",
+    "Cumplimiento": 75,
+    "Area": "Servicio al Cliente",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      }
+    ],
+    "Tareas": [
+      "Realizar encuestas de satisfacción",
+      "Analizar resultados de encuestas"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b0336"
+    },
+    "Indicador": "Productividad del Equipo",
+    "Descripcion": "Evaluación de la productividad del equipo de trabajo",
+    "Categoria": "Alta",
+    "FechaInicio": {
+      "$date": "2021-02-01T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-31T00:00:00.000Z"
+    },
+    "Formula": "Met.Eficiencia",
+    "Frecuencia": "1/1",
+    "Cumplimiento": 92,
+    "Area": "Recursos Humanos",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      }
+    ],
+    "Tareas": [
+      "Evaluar la productividad individual",
+      "Implementar mejoras en procesos de trabajo"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b0337"
+    },
+    "Indicador": "Ingresos Netos",
+    "Descripcion": "Cálculo de los ingresos netos de la empresa",
+    "Categoria": "Alta",
+    "FechaInicio": {
+      "$date": "2021-01-01T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-31T00:00:00.000Z"
+    },
+    "Formula": "Met.Contabilidad",
+    "Frecuencia": "1/1",
+    "Cumplimiento": 95,
+    "Area": "Finanzas",
+    "Empleados": [
+      {
+        "Empleado":  {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      }
+    ],
+    "Tareas": [
+      "Registrar transacciones financieras",
+      "Preparar estados financieros"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b0338"
+    },
+    "Indicador": "Tiempo de Entrega",
+    "Descripcion": "Medición del tiempo de entrega de productos o servicios",
+    "Categoria": "Media",
+    "FechaInicio": {
+      "$date": "2021-04-01T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-31T00:00:00.000Z"
+    },
+    "Formula": "Met.Logística",
+    "Frecuencia": "1/2",
+    "Cumplimiento": 80,
+    "Area": "Operaciones",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      }
+    ],
+    "Tareas": [
+      "Optimizar procesos de entrega",
+      "Realizar seguimiento de entregas"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b0339"
+    },
+    "Indicador": "Nivel de Inventario",
+    "Descripcion": "Control del nivel de inventario de productos",
+    "Categoria": "Baja",
+    "FechaInicio": {
+      "$date": "2021-01-15T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-15T00:00:00.000Z"
+    },
+    "Formula": "Met.Inventario",
+    "Frecuencia": "1/3",
+    "Cumplimiento": 45,
+    "Area": "Logística",
+    "Empleados": [
+      {
+        "Empleado":  {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      }
+    ],
+    "Tareas": [
+      "Realizar conteo de inventario",
+      "Gestionar pedidos de productos"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b033a"
+    },
+    "Indicador": "Seguridad en el Trabajo",
+    "Descripcion": "Evaluación de la seguridad en el entorno laboral",
+    "Categoria": "Media",
+    "FechaInicio": {
+      "$date": "2021-03-01T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-31T00:00:00.000Z"
+    },
+    "Formula": "Met.Seguridad",
+    "Frecuencia": "1/1",
+    "Cumplimiento": 70,
+    "Area": "Recursos Humanos",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      }
+    ],
+    "Tareas": [
+      "Realizar inspecciones de seguridad",
+      "Implementar medidas de seguridad"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b033b"
+    },
+    "Indicador": "Retención de Clientes",
+    "Descripcion": "Mantener a los clientes actuales",
+    "Categoria": "Alta",
+    "FechaInicio": {
+      "$date": "2021-01-01T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-31T00:00:00.000Z"
+    },
+    "Formula": "Met.Retención",
+    "Frecuencia": "1/1",
+    "Cumplimiento": 88,
+    "Area": "Ventas",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      }
+    ],
+    "Tareas": [
+      "Analizar la satisfacción del cliente",
+      "Implementar estrategias de retención"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b033c"
+    },
+    "Indicador": "Costo de Adquisición de Clientes",
+    "Descripcion": "Evaluar el costo de adquirir nuevos clientes",
+    "Categoria": "Alta",
+    "FechaInicio": {
+      "$date": "2021-01-01T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-31T00:00:00.000Z"
+    },
+    "Formula": "Met.Costo",
+    "Frecuencia": "1/1",
+    "Cumplimiento": 78,
+    "Area": "Ventas",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      }
+    ],
+    "Tareas": [
+      "Calcular el costo de adquisición",
+      "Optimizar estrategias de adquisición"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b033d"
+    },
+    "Indicador": "Efectividad de Marketing Digital",
+    "Descripcion": "Evaluar la efectividad de las campañas de marketing digital",
+    "Categoria": "Media",
+    "FechaInicio": {
+      "$date": "2021-03-01T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-31T00:00:00.000Z"
+    },
+    "Formula": "Met.Marketing",
+    "Frecuencia": "1/1",
+    "Cumplimiento": 65,
+    "Area": "Marketing",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      }
+    ],
+    "Tareas": [
+      "Analizar métricas de marketing",
+      "Optimizar campañas de marketing"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b033e"
+    },
+    "Indicador": "Índice de Rotación de Empleados",
+    "Descripcion": "Medir la rotación de empleados en la empresa",
+    "Categoria": "Media",
+    "FechaInicio": {
+      "$date": "2021-02-15T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-15T00:00:00.000Z"
+    },
+    "Formula": "Met.Rotación",
+    "Frecuencia": "1/3",
+    "Cumplimiento": 60,
+    "Area": "Recursos Humanos",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      }
+    ],
+    "Tareas": [
+      "Calcular la tasa de rotación",
+      "Implementar estrategias de retención de empleados"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6524419af40776a48e9b033f"
+    },
+    "Indicador": "Costo de Producción",
+    "Descripcion": "Evaluar el costo de producción de productos",
+    "Categoria": "Alta",
+    "FechaInicio": {
+      "$date": "2021-01-01T00:00:00.000Z"
+    },
+    "FechaFinal": {
+      "$date": "2021-12-31T00:00:00.000Z"
+    },
+    "Formula": "Met.Producción",
+    "Frecuencia": "1/1",
+    "Cumplimiento": 85,
+    "Area": "Operaciones",
+    "Empleados": [
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      },
+      {
+        "Empleado": {
+          "$oid": "652431fcf40776a48e9b0319"
+        }
+      }
+    ],
+    "Tareas": [
+      "Calcular el costo de producción",
+      "Optimizar procesos de producción"
+    ]
+  }
+]

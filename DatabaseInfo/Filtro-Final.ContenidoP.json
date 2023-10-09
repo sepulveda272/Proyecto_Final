@@ -1,11 +1,17 @@
-[{
-    "Indicador":"Modelo 3D",
-    "Descripcion":"Interes por dice",
-    "Categoria":"Baja",
-    "FechaInicio":"12/0521",
-    "FechaFinal":"12/12/21",
-    "Formula":"Met.Agil",
-    "Frecuencia":"1/4",
-    "Cumplimiento":31,
-    "Area":"Marketing"
- }]
+[
+  {
+    "Indicador": "Modelo 3D",
+    "Descripcion": "Interes por dice",
+    "Categoria": "Baja",
+    "FechaInicio": "12-05-21",
+    "FechaFinal": "12-12-21",
+    "Formula": "Met.Agil",
+    "Frecuencia": "1/4",
+    "Cumplimiento": 31,
+    "Area": "Marketing",
+    "Empleados": [
+      {"oid": "652431fcf40776a48e9b031d"}, {"oid": "652431fcf40776a48e9b031d"}
+    ],
+    "Tareas": ["Terminar el renderizado","Texturizar Casas"]
+  }
+]
