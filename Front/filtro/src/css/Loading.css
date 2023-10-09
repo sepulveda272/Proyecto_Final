@@ -1,13 +1,28 @@
-.divPadre{
-    height: 100vh;
-    position: relative;
+body{
+    position: absolute;
+    top: 452px;
+    left: 862px;
+    width: 197px;
+    height: 176px;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 
 .divHijo{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  /* Layout Properties */
+top: -117px;
+left: -28px;
+width: 1977px;
+height: 1446px;
+/* UI Properties */
+background: transparent url('') 0% 0% no-repeat padding-box;
+opacity: 0.13;
+top: 452px;
+left: 862px;
+width: 197px;
+height: 176px;
+/* UI Properties */
+background: #FF721B 0% 0% no-repeat padding-box;
+opacity: 1;
 }
+
