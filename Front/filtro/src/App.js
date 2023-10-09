@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header fondo">
         {!mostrarInicio && (
           <div className="form-container">
             <p className="title">Welcome back</p>
