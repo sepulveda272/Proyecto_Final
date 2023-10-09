@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "652431fcf40776a48e9b0316"
+  },
+  "Nombre": "Juan",
+  "Apellido": "Pérez",
+  "Teléfono": "1234567890",
+  "Cargo": {
+    "$oid": "6520c404f40776a48e9b02f8"
+  },
+  "Email": "juan.perez@example.com",
+  "Tipo de Documento": "Cédula de Ciudadanía",
+  "DNI": "1234567890",
+  "Dirección": "Calle 123, Bogotá, Colombia"
+},
+{
+  "_id": {
+    "$oid": "652431fcf40776a48e9b0317"
+  },
+  "Nombre": "Ana",
+  "Apellido": "Gómez",
+  "Teléfono": "2345678901",
+  "Cargo": {
+    "$oid": "6520c404f40776a48e9b02f9"
+  },
+  "Email": "ana.gomez@example.com",
+  "Tipo de Documento": "Cédula de Extranjería",
+  "DNI": "2345678901",
+  "Dirección": "Avenida 456, Medellín, Colombia"
+},
+{
+  "_id": {
+    "$oid": "652431fcf40776a48e9b0318"
+  },
+  "Nombre": "Carlos",
+  "Apellido": "López",
+  "Teléfono": "3456789012",
+  "Cargo": {
+    "$oid": "6520c404f40776a48e9b02fa"
+  },
+  "Email": "carlos.lopez@example.com",
+  "Tipo de Documento": "Pasaporte",
+  "DNI": "3456789012",
+  "Dirección": "Carrera 789, Cali, Colombia"
+},
+{
+  "_id": {
+    "$oid": "652431fcf40776a48e9b0319"
+  },
+  "Nombre": "María",
+  "Apellido": "Rodríguez",
+  "Teléfono": "4567890123",
+  "Cargo": {
+    "$oid": "6520c404f40776a48e9b02fb"
+  },
+  "Email": "maria.rodriguez@example.com",
+  "Tipo de Documento": "Cédula de Ciudadanía",
+  "DNI": "4567890123",
+  "Dirección": "Diagonal 1011, Barranquilla, Colombia"
+},
+{
+  "_id": {
+    "$oid": "652431fcf40776a48e9b031a"
+  },
+  "Nombre": "Luis",
+  "Apellido": "Martínez",
+  "Teléfono": "5678901234",
+  "Cargo": {
+    "$oid": "6520c404f40776a48e9b02fc"
+  },
+  "Email": "luis.martinez@example.com",
+  "Tipo de Documento": "Cédula de Extranjería",
+  "DNI": "5678901234",
+  "Dirección": "Calle 1213, Bogotá, Colombia"
+},
+{
+  "_id": {
+    "$oid": "652431fcf40776a48e9b031b"
+  },
+  "Nombre": "Elena",
+  "Apellido": "Sánchez",
+  "Teléfono": "6789012345",
+  "Cargo": {
+    "$oid": "6520c404f40776a48e9b02fd"
+  },
+  "Email": "elena.sanchez@example.com",
+  "Tipo de Documento": "Cédula de Ciudadanía",
+  "DNI": "6789012345",
+  "Dirección": "Avenida 1617, Medellín, Colombia"
+},
+{
+  "_id": {
+    "$oid": "652431fcf40776a48e9b031c"
+  },
+  "Nombre": "Pedro",
+  "Apellido": "Torres",
+  "Teléfono": "7890123456",
+  "Cargo": {
+    "$oid": "6520c404f40776a48e9b02fe"
+  },
+  "Email": "pedro.torres@example.com",
+  "Tipo de Documento": "Pasaporte",
+  "DNI": "7890123456",
+  "Dirección": "Carrera 1819, Cali, Colombia"
+},
+{
+  "_id": {
+    "$oid": "652431fcf40776a48e9b031d"
+  },
+  "Nombre": "Sofía",
+  "Apellido": "Fernández",
+  "Teléfono": "8901234567",
+  "Cargo": {
+    "$oid": "6520c404f40776a48e9b02ff"
+  },
+  "Email": "sofia.fernandez@example.com",
+  "Tipo de Documento": "Cédula de Ciudadanía",
+  "DNI": "8901234567",
+  "Dirección": "Diagonal 2021, Bogotá, Colombia"
+},
+{
+  "_id": {
+    "$oid": "652431fcf40776a48e9b031e"
+  },
+  "Nombre": "Diego",
+  "Apellido": "Hernández",
+  "Teléfono": "9012345678",
+  "Cargo": {
+    "$oid": "6520c404f40776a48e9b0300"
+  },
+  "Email": "diego.hernandez@example.com",
+  "Tipo de Documento": "Cédula de Extranjería",
+  "DNI": "9012345678",
+  "Dirección": "Calle 2223, Medellín, Colombia"
+},
+{
+  "_id": {
+    "$oid": "652431fcf40776a48e9b031f"
+  },
+  "Nombre": "Laura",
+  "Apellido": "Díaz",
+  "Teléfono": "0123456789",
+  "Cargo": {
+    "$oid": "6520c404f40776a48e9b0301"
+  },
+  "Email": "laura.diaz@example.com",
+  "Tipo de Documento": "Cédula de Ciudadanía",
+  "DNI": "0123456789",
+  "Dirección": "Avenida 2425, Bogotá, Colombia"
+},
+{
+  "_id": {
+    "$oid": "652431fcf40776a48e9b0320"
+  },
+  "Nombre": "Andrés",
+  "Apellido": "García",
+  "Teléfono": "1234567890",
+  "Cargo": {
+    "$oid": "6520c404f40776a48e9b0302"
+  },
+  "Email": "andres.garcia@example.com",
+  "Tipo de Documento": "Cédula de Ciudadanía",
+  "DNI": "1234567890",
+  "Dirección": "Carrera 2627, Cali, Colombia"
+}]
