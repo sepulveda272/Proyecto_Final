@@ -11,7 +11,8 @@
   "Email": "juan.perez@example.com",
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "1234567890",
-  "Dirección": "Calle 123, Bogotá, Colombia"
+  "Dirección": "Calle 123, Bogotá, Colombia",
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
 },
 {
   "_id": {
@@ -26,7 +27,8 @@
   "Email": "ana.gomez@example.com",
   "Tipo de Documento": "Cédula de Extranjería",
   "DNI": "2345678901",
-  "Dirección": "Avenida 456, Medellín, Colombia"
+  "Dirección": "Avenida 456, Medellín, Colombia",
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
 },
 {
   "_id": {
@@ -41,7 +43,8 @@
   "Email": "carlos.lopez@example.com",
   "Tipo de Documento": "Pasaporte",
   "DNI": "3456789012",
-  "Dirección": "Carrera 789, Cali, Colombia"
+  "Dirección": "Carrera 789, Cali, Colombia",
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
 },
 {
   "_id": {
@@ -56,7 +59,8 @@
   "Email": "maria.rodriguez@example.com",
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "4567890123",
-  "Dirección": "Diagonal 1011, Barranquilla, Colombia"
+  "Dirección": "Diagonal 1011, Barranquilla, Colombia",
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
 },
 {
   "_id": {
@@ -71,7 +75,8 @@
   "Email": "luis.martinez@example.com",
   "Tipo de Documento": "Cédula de Extranjería",
   "DNI": "5678901234",
-  "Dirección": "Calle 1213, Bogotá, Colombia"
+  "Dirección": "Calle 1213, Bogotá, Colombia",
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
 },
 {
   "_id": {
@@ -86,7 +91,8 @@
   "Email": "elena.sanchez@example.com",
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "6789012345",
-  "Dirección": "Avenida 1617, Medellín, Colombia"
+  "Dirección": "Avenida 1617, Medellín, Colombia",
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
 },
 {
   "_id": {
@@ -101,7 +107,8 @@
   "Email": "pedro.torres@example.com",
   "Tipo de Documento": "Pasaporte",
   "DNI": "7890123456",
-  "Dirección": "Carrera 1819, Cali, Colombia"
+  "Dirección": "Carrera 1819, Cali, Colombia",
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
 },
 {
   "_id": {
@@ -116,7 +123,8 @@
   "Email": "sofia.fernandez@example.com",
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "8901234567",
-  "Dirección": "Diagonal 2021, Bogotá, Colombia"
+  "Dirección": "Diagonal 2021, Bogotá, Colombia",
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
 },
 {
   "_id": {
@@ -131,7 +139,8 @@
   "Email": "diego.hernandez@example.com",
   "Tipo de Documento": "Cédula de Extranjería",
   "DNI": "9012345678",
-  "Dirección": "Calle 2223, Medellín, Colombia"
+  "Dirección": "Calle 2223, Medellín, Colombia",
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
 },
 {
   "_id": {
@@ -146,7 +155,8 @@
   "Email": "laura.diaz@example.com",
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "0123456789",
-  "Dirección": "Avenida 2425, Bogotá, Colombia"
+  "Dirección": "Avenida 2425, Bogotá, Colombia",
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
 },
 {
   "_id": {
@@ -161,5 +171,6 @@
   "Email": "andres.garcia@example.com",
   "Tipo de Documento": "Cédula de Ciudadanía",
   "DNI": "1234567890",
-  "Dirección": "Carrera 2627, Cali, Colombia"
+  "Dirección": "Carrera 2627, Cali, Colombia",
+  "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg"
 }]
