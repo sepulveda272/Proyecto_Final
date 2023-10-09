@@ -1,4 +1,7 @@
 [{
+    "Indicador":"(Id del Indicador)",
     "NombreReporte": "daño",
-    "DescripcionReporte": "no se prueba"
+    "DescripcionReporte": "no se prueba",
+    "FechaEncuentro":"",
+    "":""
 }]
