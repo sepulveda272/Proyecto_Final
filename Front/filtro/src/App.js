@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link, Navigate} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Loading from './components/Loading';
-<<<<<<< HEAD
-import Login from './components/Panel';
+import Panel from './components/Panel.jsx';
 import './css/Login.css';
 import './css/Panel.css';
-=======
-import Login from './components/Loging';
-
->>>>>>> fab046e58e9d4dd918d6a1f94bb5618930fa839e
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -83,12 +79,12 @@ function App() {
           </div>
         )}
 
-        {mostrarInicio ? (
-          <Login />
-        ) : (
-          <p></p>
-        )}
+        {mostrarInicio && <Navigate to="/panel" />}
       </header>
+        
+      <Routes>
+          <Route path='/panel' component={<Panel/>}/>
+      </Routes>
     </div>
   );
 }

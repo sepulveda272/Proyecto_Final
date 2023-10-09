@@ -3,7 +3,7 @@ import Loading from './Loading';
 
 
 
-const Loging = () => {
+const Panel = () => {
     
     const [loading, setLoading] = useState(true);
 
@@ -36,4 +36,4 @@ const Loging = () => {
     );
 };
 
-export default Loging;
+export default Panel;
