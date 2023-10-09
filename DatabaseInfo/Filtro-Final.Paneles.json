@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "65243c8ef40776a48e9b0323"
+  },
+  "Nombre": "Indicadores",
+  "Descricao": "Aqui puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo. Si quieres ver más detalles, dale click a uno de ellos para más información"
+},
+{
+  "_id": {
+    "$oid": "65243c8ef40776a48e9b0324"
+  },
+  "Nombre": "Tareas",
+  "Descricao": "En esta sección, puedes administrar y hacer un seguimiento de las tareas asignadas a ti y a tu equipo. Marca las tareas completadas para mantener todo en orden."
+},
+{
+  "_id": {
+    "$oid": "65243c8ef40776a48e9b0325"
+  },
+  "Nombre": "Calendario",
+  "Descricao": "El calendario te permite programar y hacer un seguimiento de tus eventos y reuniones importantes. No te pierdas ninguna fecha importante."
+},
+{
+  "_id": {
+    "$oid": "65243c8ef40776a48e9b0326"
+  },
+  "Nombre": "Mensajes",
+  "Descricao": "Utiliza esta función para comunicarte con tu equipo. Envía mensajes y mantente al tanto de las conversaciones importantes en tu proyecto."
+},
+{
+  "_id": {
+    "$oid": "65243c8ef40776a48e9b0327"
+  },
+  "Nombre": "Notificaciones",
+  "Descricao": "Recibe notificaciones instantáneas sobre actualizaciones y eventos importantes en tu proyecto. Mantente informado en todo momento."
+},
+{
+  "_id": {
+    "$oid": "65243c8ef40776a48e9b0328"
+  },
+  "Nombre": "Documentos",
+  "Descricao": "Accede a todos los documentos relevantes de tu proyecto desde esta sección. Sube, descarga y comparte archivos fácilmente con tu equipo."
+},
+{
+  "_id": {
+    "$oid": "65243c8ef40776a48e9b0329"
+  },
+  "Nombre": "Configuración",
+  "Descricao": "Personaliza la configuración de tu perfil y de tu proyecto según tus preferencias. Haz que la plataforma funcione a tu manera."
+},
+{
+  "_id": {
+    "$oid": "65243c8ef40776a48e9b032a"
+  },
+  "Nombre": "Estadísticas",
+  "Descricao": "Analiza y visualiza las estadísticas clave de tu proyecto. Obtén información valiosa para tomar decisiones informadas."
+},
+{
+  "_id": {
+    "$oid": "65243c8ef40776a48e9b032b"
+  },
+  "Nombre": "Foro de Discusión",
+  "Descricao": "Participa en debates y discusiones relevantes sobre tu proyecto en el foro. Comparte tus ideas y colabora con tu equipo."
+},
+{
+  "_id": {
+    "$oid": "65243c8ef40776a48e9b032c"
+  },
+  "Nombre": "Ayuda y Soporte",
+  "Descricao": "Encuentra respuestas a tus preguntas y obtén ayuda cuando la necesites. Nuestro equipo de soporte está aquí para ayudarte."
+}]
