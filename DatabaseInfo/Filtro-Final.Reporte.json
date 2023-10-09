@@ -1,7 +1,24 @@
 [{
-    "Indicador":"(Id del Indicador)",
     "NombreReporte": "daño",
     "DescripcionReporte": "no se prueba",
-    "FechaEncuentro":"",
-    "":""
+    "FechaEncuentro":{
+        "$date": "2021-12-15T00:00:00.000Z"
+      },
+    "Reparacion":100,
+    "Reparado":true,
+    "FechaReparacion": {
+        "$date": "2021-12-24T00:00:00.000Z"
+      },
+      "Estado":true
+},
+{
+    "NombreReporte": "Errores",
+    "DescripcionReporte": "no se enciende",
+    "FechaEncuentro":{
+        "$date": "2021-2-15T00:00:00.000Z"
+      },
+    "Reparacion":50,
+    "Reparado":false,
+    "FechaReparacion": null,
+      "Estado":true
 }]
