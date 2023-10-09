@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "652445b2f40776a48e9b0345"
+  },
+  "NombreReporte": "Daño 1",
+  "DescripcionReporte": "No se prueba",
+  "FechaEncuentro": {
+    "$date": "2021-12-15T00:00:00.000Z"
+  },
+  "Reparacion": 100,
+  "Reparado": true,
+  "FechaReparacion": {
+    "$date": "2021-12-24T00:00:00.000Z"
+  },
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "652445b2f40776a48e9b0346"
+  },
+  "NombreReporte": "Errores 1",
+  "DescripcionReporte": "No se enciende",
+  "FechaEncuentro": {
+    "$date": "2021-02-15T00:00:00.000Z"
+  },
+  "Reparacion": 50,
+  "Reparado": false,
+  "FechaReparacion": null,
+  "Indicadores":{
+    "oid": "6524419af40776a48e9b0335"
+  },
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "652445b2f40776a48e9b0347"
+  },
+  "NombreReporte": "Daño 2",
+  "DescripcionReporte": "Fallo en el sistema",
+  "FechaEncuentro": {
+    "$date": "2021-10-10T00:00:00.000Z"
+  },
+  "Reparacion": 100,
+  "Reparado": true,
+  "FechaReparacion": {
+    "$date": "2021-10-20T00:00:00.000Z"
+  },
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "652445b2f40776a48e9b0348"
+  },
+  "NombreReporte": "Errores 2",
+  "DescripcionReporte": "Pérdida de datos",
+  "FechaEncuentro": {
+    "$date": "2021-03-05T00:00:00.000Z"
+  },
+  "Reparacion": 70,
+  "Reparado": false,
+  "FechaReparacion": null,
+  "Indicadores":{
+    "oid": "6524419af40776a48e9b0335"
+  },
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "652445b2f40776a48e9b0349"
+  },
+  "NombreReporte": "Daño 3",
+  "DescripcionReporte": "Problemas de hardware",
+  "FechaEncuentro": {
+    "$date": "2021-08-20T00:00:00.000Z"
+  },
+  "Reparacion": 100,
+  "Reparado": true,
+  "FechaReparacion": {
+    "$date": "2021-08-28T00:00:00.000Z"
+  },
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "652445b2f40776a48e9b034a"
+  },
+  "NombreReporte": "Errores 3",
+  "DescripcionReporte": "Bloqueo del sistema",
+  "FechaEncuentro": {
+    "$date": "2021-05-15T00:00:00.000Z"
+  },
+  "Reparacion": 30,
+  "Reparado": false,
+  "FechaReparacion": null,
+  "Indicadores":{
+    "oid": "6524419af40776a48e9b0335"
+  },
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "652445b2f40776a48e9b034b"
+  },
+  "NombreReporte": "Daño 4",
+  "DescripcionReporte": "Problemas de software",
+  "FechaEncuentro": {
+    "$date": "2021-11-12T00:00:00.000Z"
+  },
+  "Reparacion": 100,
+  "Reparado": true,
+  "FechaReparacion": {
+    "$date": "2021-11-20T00:00:00.000Z"
+  },
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "652445b2f40776a48e9b034c"
+  },
+  "NombreReporte": "Errores 4",
+  "DescripcionReporte": "Pantalla en blanco",
+  "FechaEncuentro": {
+    "$date": "2021-04-08T00:00:00.000Z"
+  },
+  "Reparacion": 80,
+  "Reparado": false,
+  "FechaReparacion": null,
+  "Indicadores":{
+    "oid": "6524419af40776a48e9b0335"
+  },
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "652445b2f40776a48e9b034d"
+  },
+  "NombreReporte": "Daño 5",
+  "DescripcionReporte": "Problema de red",
+  "FechaEncuentro": {
+    "$date": "2021-07-25T00:00:00.000Z"
+  },
+  "Reparacion": 100,
+  "Reparado": true,
+  "FechaReparacion": {
+    "$date": "2021-08-02T00:00:00.000Z"
+  },
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "652445b2f40776a48e9b034e"
+  },
+  "NombreReporte": "Errores 5",
+  "DescripcionReporte": "Fallo en el arranque",
+  "FechaEncuentro": {
+    "$date": "2021-06-30T00:00:00.000Z"
+  },
+  "Reparacion": 60,
+  "Reparado": false,
+  "FechaReparacion": null,
+  "Indicadores":{
+    "oid": "65244039f40776a48e9b0331"
+  },
+  "estado": true
+}]
