@@ -5,11 +5,15 @@ import '../css/Loading.css';
 
 function Loading() {
     return (
-        <div className='divPadre'>
-            <div className='divHijo'>
-                <Spinner color='primary'/>
+        <>
+            <div className='divPadre'>
+                <div className='divHijo'>
+                    <Spinner color='primary'/>
+                </div>
             </div>
-        </div>
+        
+        
+        </>
     );
 }
 
