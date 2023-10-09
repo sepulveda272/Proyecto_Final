@@ -1,6 +1,4 @@
-
-
-
+/* LOADING */
 .divPadre{
     height: 100vh;
     position: relative;
@@ -15,4 +13,14 @@
     transform: translate(-50%, -50%);
 }
 
+
+.fondo_white {
+    background-color: rgb(255, 255, 255)!important;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 

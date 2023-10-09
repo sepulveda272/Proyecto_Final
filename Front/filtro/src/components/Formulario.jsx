@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import {Navigate} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Presentacion from './Presentacion'
-import '../css/Login.css';
-import '../css/Panel.css';
+import Presentacion from './Presentacion.jsx'
 
 
 const Formulario = () => {
@@ -25,7 +23,7 @@ const Formulario = () => {
 
     return (
         <div>
-            <header className="App-header fondo">
+            <div className="App-header">
         {!mostrarInicio && (
           <div className="form-container">
             <p className="title">Welcome back</p>
@@ -81,7 +79,7 @@ const Formulario = () => {
         // Muestra el componente Inicio después de 10 segundos
         <Presentacion />
       )}
-      </header>
+      </div>
         </div>
     );
 };

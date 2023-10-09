@@ -3,7 +3,7 @@ import React from 'react';
 function Inicio() {
   
   return (
-    <div>
+    <div className='init'>
       hola
     </div>
   );

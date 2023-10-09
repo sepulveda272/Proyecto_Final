@@ -7,6 +7,8 @@ import Panel from './components/Panel.jsx';
 import Presentacion from './components/Presentacion.jsx';
 import './css/Login.css';
 import './css/Panel.css';
+import './css/Loading.css';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,7 +28,7 @@ function App() {
       <div className="App">
           
         <Routes>
-          <Route path="/" element={<Formulario />} />
+          <Route  path="/" element={<Formulario className='fondo_black' />} />
           <Route path="/inicio" element={<Presentacion />} />
           <Route path="/loading" element={<Loading />} />
           <Route path='/panel' element={<Panel/>}/>

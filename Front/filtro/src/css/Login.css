@@ -1,10 +1,15 @@
+body{
+  background-color: black;
+}
+
+
 
 .form-container {
   top: 160px;
   left: 492px;
   width: 936px;
   height: 761px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #fffdfd 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   border-radius: 67px;
   opacity: 1;
