@@ -1,86 +1,68 @@
-import React, { useState } from 'react';
-import {Navigate} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Presentacion from './Presentacion.jsx'
-
+import Presentacion from './Presentacion.jsx';
+import '../css/Formulario.css';
 
 const Formulario = () => {
-    const [mostrarInicio, setMostrarInicio] = useState(false);
-    const [redirigir, setRedirigir] = useState(false);
+  const [mostrarInicio, setMostrarInicio] = useState(false);
+  const [redirigir, setRedirigir] = useState(false);
 
-    const handleIniciarClick = () => {
-      setMostrarInicio(true);
-  
-      setTimeout(() => {
+  useEffect(() => {
+    if (mostrarInicio) {
+      const timeoutId = setTimeout(() => {
         setRedirigir(true);
-      }, 10000);
-    };
+      }, 8000);
 
-    if (redirigir) {
-      return <Navigate to="/panel" />;
+      return () => clearTimeout(timeoutId);
     }
+  }, [mostrarInicio]);
 
-    return (
-        <div>
-            <div className="App-header">
+  const handleIniciarClick = () => {
+    setMostrarInicio(true);
+  };
+
+  if (redirigir) {
+    return <Navigate to="/panel" />;
+  }
+
+  return (
+    <div>
+      <div className="App-header">
         {!mostrarInicio && (
           <div className="form-container">
-            <p className="title">Welcome back</p>
-            <form className="form">
-              <input type="email" className="input" placeholder="Email" />
-              <input type="password" className="input" placeholder="Password" />
-              <p className="page-link">
-                <span className="page-link-label">Forgot Password?</span>
-              </p>
-              <button onClick={handleIniciarClick} className="form-btn">Log in</button>
-            </form>
-            <p className="sign-up-label">
-              Don't have an account?<span className="sign-up-link">Sign up</span>
-            </p>
-            <div className="buttons-container">
-              <div className="apple-login-button">
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  className="apple-icon"
-                  viewBox="0 0 1024 1024"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                 
-                </svg>
-                <span>Log in with Apple</span>
-              </div>
-              <div className="google-login-button">
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  version="1.1"
-                  x="0px"
-                  y="0px"
-                  className="google-icon"
-                  viewBox="0 0 48 48"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  
-                </svg>
-                <span>Log in with Google</span>
-              </div>
+            <div className='superior'>
+            <img className="logito" src="../KARIO_LOGO.png" alt="KARIO Logo" />
+            <h3>Media</h3>
             </div>
+            <h2>
+              Vienvenido al panel digital de
+              <br />
+              KARIO Media
+            </h2>
+            <p className='decrip'>Por favor ingresa los siguientes datos para ingresar a la plataforma</p>
+            <form className="form">
+  <div className="form-content">
+    <h3>Usuario</h3>
+    <input type="email" className="input" />
+    <h3>Contraseña</h3>
+    <input type="password" className="input" />
+    <p className="page-link">
+      <span className="page-link-label"></span>
+    </p>
+    <button onClick={handleIniciarClick} className="form-btn">
+      Ingresar al panel
+    </button>
+  </div>
+</form>
+
+            <p>Tienes problemas para ingresar? Por favor contactarse con asistencia técnica lo más pronto posible</p>
           </div>
         )}
-        {mostrarInicio && (
-        // Muestra el componente Inicio después de 10 segundos
-        <Presentacion />
-      )}
+        {mostrarInicio && <Presentacion />}
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Formulario;

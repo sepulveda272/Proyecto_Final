@@ -28,7 +28,7 @@ function App() {
       <div className="App">
           
         <Routes>
-          <Route  path="/" element={<Formulario className='fondo_black' />} />
+          <Route  path="/" element={<Formulario/>} />
           <Route path="/inicio" element={<Presentacion />} />
           <Route path="/loading" element={<Loading />} />
           <Route path='/panel' element={<Panel/>}/>
