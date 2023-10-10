@@ -16,7 +16,7 @@ const options = {
         }
     ]
   },
-  apis: [], // Rutas de tus controladores
+  apis: ['./routes/empleados.routes.js', './routes/usuarios.routes.js'], // Rutas de tus controladores
 };
 
 const swaggerSpec = swaggerJsdoc(options);
