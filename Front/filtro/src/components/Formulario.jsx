@@ -12,7 +12,7 @@ const Formulario = () => {
     if (mostrarInicio) {
       const timeoutId = setTimeout(() => {
         setRedirigir(true);
-      }, 8000);
+      }, 6000);
 
       return () => clearTimeout(timeoutId);
     }

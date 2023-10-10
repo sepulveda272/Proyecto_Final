@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Loading from './components/Loading.jsx';
 import Panel from './components/Panel.jsx';
 import Presentacion from './components/Presentacion.jsx';
-import './css/Login.css';
+import './css/Presentacion.css';
 import './css/Panel.css';
 import './css/Loading.css';
 
