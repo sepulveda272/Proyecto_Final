@@ -13,6 +13,12 @@
     transform: translate(-50%, -50%);
 }
 
+.init{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .fondo_white {
     background-color: rgb(255, 255, 255)!important;
