@@ -1,0 +1,113 @@
+.App-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+  }
+  
+  .input {
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form h3 {
+    text-align: left;
+  }
+
+
+  .form-container .title {
+    text-align: left; 
+  }
+ 
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .superior{
+    margin-bottom: 10px;
+  }
+  
+.descrip{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+  .input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+top: 530px;
+left: 635px;
+width: 650px;
+height: 50px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+border-radius: 20px;
+opacity: 1;
+  }
+  
+  .page-link {
+    margin-top: 10px;
+  }
+  
+  .form-btn {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    top: 723px;
+    left: 792px;
+    width: 336px;
+    height: 70px;
+    background: #FF6F2C 0% 0% no-repeat padding-box;
+    border: none; /* Quita el borde */
+    border-radius: 35px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 25px/35px Myriad Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+  
+  
+  .form-btn:hover {
+    background-color: #ff580a;
+  }
+  
+  .sign-up-label {
+    margin-top: 20px;
+  }
+  
+  
+  .Presentacion {
+    display: none;
+  }
+  
+
+  .logito{
+    top: 197px;
+    left: 909px;
+    width: 103px;
+    height: 92px;
+  }
+
