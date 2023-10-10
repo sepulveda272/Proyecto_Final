@@ -1,5 +1,6 @@
 import { ObjectId } from "mongodb";
 import { conection} from "../database/conection.js";
+import bcryptjs from "bcryptjs"
 
 export const getUsuario = async (req, res) => {
     try {
@@ -21,12 +22,17 @@ export const postUsuario = async (req, res) => {
         if (!empleado) {
             return res.status(404).json({ error: "Empleado no encontrado" });
         }
+
+        const salt = bcryptjs.genSaltSync()
+        req.body.password = bcryptjs.hashSync(password, salt)
+
+
         const nuevoUsuario = {
             Empleado: {
                 $oid: empleado._id
             },
             usuario,
-            password,
+            password:req.body.password,
             estado: true
         };
         await db.Usuarios.insertOne(nuevoUsuario);
