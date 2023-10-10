@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Loading from './Loading';
 import Nav from './Nav';
-
+import Report from './Help';
 
 
 const Panel = () => {
@@ -11,7 +11,7 @@ const Panel = () => {
   
     useEffect(() => {
       const interval = setInterval(() => {
-        if (percentage < 40) {
+        if (percentage < 50) {
           setPercentage(percentage + 1);
         } else {
           setAnimationDirection('backwards');
@@ -111,6 +111,10 @@ const Panel = () => {
                 </tbody>
               </table>
             </div> 
+
+
+
+<Report/>
 
         </div>
       </>
