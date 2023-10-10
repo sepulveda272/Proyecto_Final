@@ -5,8 +5,31 @@ import Nav from './Nav';
 
 
 const Panel = () => {
-    
     const [loading, setLoading] = useState(true);
+    const [percentage, setPercentage] = useState(0);
+    const [animationDirection, setAnimationDirection] = useState('forwards');
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        if (percentage < 40) {
+          setPercentage(percentage + 1);
+        } else {
+          setAnimationDirection('backwards');
+        }
+      }, 100);
+  
+      return () => clearInterval(interval);
+    }, [percentage]);
+  
+    const getCircleColor = () => {
+      if (percentage >= 80) {
+        return 'green';
+      } else if (percentage >= 50) {
+        return 'orange';
+      } else {
+        return 'red';
+      }
+    };
 
       useEffect(() => {
         setTimeout(() => {
@@ -59,7 +82,27 @@ const Panel = () => {
                         <p className='p5'>12/12/21</p>
                         <p className='p6'>Met.Agil</p>
                         <p className='p7'>1/4</p>
-                        <p className='p8'>31%</p>
+                        <p className='p8'>
+                        <div className="circle-loader">
+      <svg width="70" height="70">
+        <circle
+          className="circle"
+          cx="35"
+          cy="35"
+          r="31"
+          stroke={getCircleColor()}
+          strokeWidth="6"
+          fill="none"
+          strokeDasharray="251"
+          strokeDashoffset={(251 * (100 - percentage)) / 100}
+          style={{ animationDirection: animationDirection }}
+        />
+        <text x="35" y="35" textAnchor="middle" dy="0.3em" className="percentage">
+          {percentage}%
+        </text>
+      </svg>
+    </div>
+                        </p>
                         <p className='p9'>Marketing</p>
                       </div>
                     </td>
