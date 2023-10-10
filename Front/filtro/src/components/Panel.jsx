@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Loading from './Loading';
+import Nav from './Nav';
 
 
 
@@ -18,12 +19,13 @@ const Panel = () => {
       }
 
     return (
-      <>
+      <><Nav/>
+      
         <div className='fondo_white'>
           
-            <div /* className='menu' */>
-              <p>Aca va el Menu</p>
-            </div>
+            
+              
+            
             <p className='title_panel'> Panel de Indicadores </p>
             <p className='text_panel'> Aqui puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo. Si quieres ver más detalles , dale click a uno de ellos para más información  </p>
 
