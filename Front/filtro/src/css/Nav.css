@@ -82,4 +82,28 @@ height: 19px;
     border-radius: 50%;
   }
   
- 
+ /* En tu archivo Nav.css */
+
+.nav-user {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-buttont {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.nav-user:hover .user-button {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+

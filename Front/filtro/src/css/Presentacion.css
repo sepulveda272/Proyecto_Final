@@ -1,12 +1,24 @@
-.form-container-present{
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .form-container-present {
     background-color: #FFFFFF;
     width: 936px;
     height: 549px;
     margin-top: 266px;
     border: 1px solid #ffffff;
     border-radius: 67px;
-}
-
+    animation: fadeIn 0.5s ease;
+  }
+  
 
 .form-container-present{
     display: flex;

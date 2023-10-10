@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Nav.css';
 
 const Nav = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
+  const handleUserClick = () => {
+    setIsLoggedIn(!isLoggedIn);
+    setShowButton(true); // Mostrar el botón al hacer clic
+  };
+
   return (
     <nav className="nav">
       <ul className="nav-menu">
@@ -34,8 +42,13 @@ const Nav = () => {
           <img className='space' src="../activar-el-boton-de-notificaciones.png" alt="Logot" />
         </li>
       </ul>
-      <div className="nav-user">
+      <div className="nav-user" onClick={handleUserClick}>
         <img src="https://avatars.githubusercontent.com/u/47305995?v=4" alt="Usuario" />
+        {showButton && isLoggedIn ? (
+          <div className="user-buttont">
+            <Link to="/">Logout</Link>
+          </div>
+        ) : null}
       </div>
       <div className="nav-notifications">
         <i className="fas fa-bell"></i>
