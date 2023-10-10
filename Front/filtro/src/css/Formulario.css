@@ -1,119 +1,192 @@
-.App-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-.form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    text-align: center;
-  }
-  
-  .input {
-    text-align: left;
-    padding-left: 10px;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .form h3 {
-    text-align: left;
-  }
-
-
-  .form-container .title {
-    text-align: left; 
-  }
- 
-  
-  .title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .superior{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-.descrip{
-    margin-top: 20px;
-    margin-bottom: 20px;
+/* Fondo */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
 }
 
-  .input {
-    margin-top: 15px;
-    margin-bottom: 15px;
-top: 530px;
-left: 635px;
-width: 650px;
-height: 50px;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #707070;
-border-radius: 20px;
-opacity: 1;
-  }
-  
-  .page-link {
-    margin-top: 10px;
-  }
-  
-  .form-btn {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    top: 723px;
-    left: 792px;
-    width: 336px;
-    height: 70px;
-    background: #FF6F2C 0% 0% no-repeat padding-box;
-    border: none; /* Quita el borde */
-    border-radius: 35px;
-    opacity: 1;
-    text-align: center;
-    font: normal normal normal 25px/35px Myriad Pro;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-  }
-  
-  
-  .form-btn:hover {
-    background-color: #ff580a;
-  }
-  
-  .sign-up-label {
-    margin-top: 20px;
-  }
-  
-  
-  .Presentacion {
-    display: none;
-  }
-  
+body::before {
+  content: "";
+  background-image: url('https://jungle-nectarine-cef.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8d0fd571-8a0f-45e2-8fc5-1a83818f8fc5%2F55f888fe-d3ca-4495-af79-ae001df9ed98%2Fpexels-pixabay-1594002x.png?table=block&id=9a33772d-2d5c-4d71-a5c7-767105d04aa1&spaceId=8d0fd571-8a0f-45e2-8fc5-1a83818f8fc5&width=1230&userId=&cache=v2');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.13;
+  z-index: -1;
+}
 
-  .logito{
-    top: 197px;
-    left: 909px;
-    width: 103px;
-    height: 92px;
-  }
+
+
+/* FORMULARIO DE LOGIN */
+/* Fondo */
+.form-container{
+  background-color: #FFFFFF;
+  width: 936px;
+  height: 761px;
+  margin-top: 160px;
+  border: 1px solid #707070;
+  border-radius: 67px;
+}
+
+/* Ubicacion */
+.App-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ubicacion Elementos */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Logo */
+.logito_form{
+  width: 102.97px;
+  height: 92.24px;
+  margin-top: 37.48px;
+}
+
+.media{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 9.66px;
+  height: 13.57px;
+  gap: 5px;
+  font-family: "Myriad Pro Light";
+}
+
+/* Bienvenida y texto */
+.bienvenida{
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 23.05px;
+  border: 1px solid #FFFFFF;
+  width: 500px;
+  height: 96px;
+}
+
+.descrip{
+  font-family:  "Myriad Pro Light";
+  font-size: 20px;
+  border: 1px solid #FFFFFF;  
+  margin-top: 17px;
+}
+
+/* Formulario */
+.form {
+  width: 650px; 
+}
+
+.label_text{
+  border: 1px solid #FFFFFF;
+  font-family:  "Myriad Pro Light";
+  text-align: left;
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.con_form_user{
+  display: flex;
+  flex-direction: column;
+}
+
+.con_form_password{
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.input {
+  height: 50px;
+  border: 1px solid #707070;
+  border-radius: 20px;
+}
+
+.form-btn{
+  margin-top: 38px;
+  background: #FF6F2C 0% 0% no-repeat padding-box;
+  border: none; 
+  border-radius: 35px;
+  opacity: 1;
+  text-align: center;
+  font-size: 25px;
+  height: 70px;
+  width: 336px;
+  color: #FFFFFF;
+  font-family: 'Myriad Pro', sans-serif;
+}
+
+.form-btn:hover {
+  background-color: #707070;
+}
+
+.problemas_form{
+  font-family: "Myriad Pro Light";
+  font-size: 15px;
+  border: 1px solid #FFFFFF;
+  width: 588px;
+  height: 15px;
+  letter-spacing: -0.2px;
+  margin-top: 36px;
+}
+
+
+/* 
+
+.form-container .title {
+  text-align: left; 
+}
+
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.superior{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+  
+.sign-up-label {
+  margin-top: 20px;
+}
+
+
+.Presentacion {
+  display: none;
+}
+
+
+.logito{
+  top: 197px;
+  left: 909px;
+  width: 103px;
+  height: 92px;
+}
 
 .entradaIma{
   width: 150px;
   border-radius: 50%;
-}
+} */

@@ -32,31 +32,38 @@ const Formulario = () => {
         {!mostrarInicio && (
           <div className="form-container">
             <div className='superior'>
-            <img className="logito" src="../KARIO_LOGO.png" alt="KARIO Logo" />
-            <h3>Media</h3>
+              <img className="logito_form" src="../KARIO_LOGO.png" alt="KARIO Logo" />
+              <h3 className='media'>
+                <p>M</p>
+                <p>E</p>
+                <p>D</p>
+                <p>I</p>
+                <p>A</p>
+              </h3>
             </div>
-            <h2>
-              Bienvenido al panel digital de
-              <br />
-              KARIO Media
+            <h2 className='bienvenida'>
+              Bienvenido al panel digital de KARIO Media
             </h2>
-            <p className='decrip'>Por favor ingresa los siguientes datos para ingresar a la plataforma</p>
+            <p className='descrip'>Por favor ingresa los siguientes datos para ingresar a la plataforma</p>
             <form className="form">
-  <div className="form-content">
-    <h3>Usuario</h3>
-    <input type="email" className="input" />
-    <h3>Contraseña</h3>
-    <input type="password" className="input" />
-    <p className="page-link">
-      <span className="page-link-label"></span>
-    </p>
-    <button onClick={handleIniciarClick} className="form-btn">
-      Ingresar al panel
-    </button>
-  </div>
-</form>
+              <div className="form-content">
+                <div className='con_form_user'>
+                  <h3 className='label_text'>Usuario</h3>
+                  <input type="email" className="input" />
+                </div>
+                <div className='con_form_password'>
+                  <h3 className='label_text'>Contraseña</h3>
+                  <input type="password" className="input" />
+                </div>
+                <div>
+                  <button onClick={handleIniciarClick} className="form-btn">
+                    Ingresar al panel
+                  </button>
+                </div>
+              </div>
+            </form>
 
-            <p>Tienes problemas para ingresar? Por favor contactarse con asistencia técnica lo más pronto posible</p>
+            <p className='problemas_form'>Tienes problemas para ingresar? Por favor contactarse con asistencia técnica lo más pronto posible</p>
           </div>
         )}
         {mostrarInicio && <Presentacion />}
