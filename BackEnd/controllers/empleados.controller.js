@@ -15,7 +15,7 @@ export const postEmpleado = async (req, res) => {
     try {
         const { Nombre, Apellido, Telefono, Cargo, Email, TipoDeDocumento, DNI, Direccion,Imagen } = req.body;
         const db = await conection();
-        const cargo = await db.Cargos.findOne({ Cargo: Cargo });
+        const cargo = await db.Cargos.findOne({ _id: Cargo });
 
         if (!cargo) {
             return res.status(404).json({ error: "Cargo no encontrado" });
@@ -23,13 +23,12 @@ export const postEmpleado = async (req, res) => {
         const nuevoEmpleado = {
             Nombre,
             Apellido,
-            Telefono,
-            Cargo: {
-                $oid: cargo._id
-            },
+            Telefono: Number(Telefono),
+            Cargo: cargo._id
+            ,
             Email,
             TipoDeDocumento,
-            DNI,
+            DNI: Number(DNI),
             Direccion,
             Imagen,
             estado: true

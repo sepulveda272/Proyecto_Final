@@ -13,9 +13,14 @@ export const getReportes = async (req, res) => {
 
 export const postResporte = async (req, res) => {
     try {
-        const { NombreReporte,DescripcionReporte,FechaEncuentro,Reparacion,Reparado,FechaReparacion,Indicadores } = req.body;
+        const { NombreReporte,DescripcionReporte,FechaEncuentro,Reparacion,Reparado,Indicadores } = req.body;
+        let {FechaReparacion} = req.body
         const db = await conection();
-        const indicador = await db.Indicadores.findOne({ Indicador: Indicadores });
+        const indicador = await db.Indicadores.findOne({ _id: Indicadores });
+
+        if(!Reparado){
+            FechaReparacion = null
+        }
 
         if (!indicador) {
             return res.status(404).json({ error: "Indicador no encontrado" });
@@ -23,13 +28,13 @@ export const postResporte = async (req, res) => {
         const nuevoReporte = {
             NombreReporte,
             DescripcionReporte,
-            FechaEncuentro,
-            Reparacion,
+            FechaEncuentro: new Date(FechaEncuentro),
+            Reparacion: Number(Reparacion),
             Reparado,
             FechaReparacion,
-            Indicadores: {
-                $oid: indicador._id
-            },
+            Indicadores:
+              indicador._id
+            ,
             estado: true
         };
         await db.Reportes.insertOne(nuevoReporte);

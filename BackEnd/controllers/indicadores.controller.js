@@ -15,7 +15,7 @@ export const postIndicador = async (req, res) => {
     try {
         const {Indicador, Descripcion, Categoria, FechaInicio, FechaFinal, Formula, Frecuencia, Cumplimiento, Area, Empleados, Tareas, Panel} = req.body;
         const db = await conection();
-        const panel = await db.Paneles.findOne({Nombre: Panel})
+        const panel = await db.Paneles.findOne({_id: Panel})
         
         if (!panel) {
             return res.status(404).json({ error: "Panel no encontrado" });
@@ -24,7 +24,7 @@ export const postIndicador = async (req, res) => {
         const empleadoIds = [];
 
         for ( const empleadoId of Empleados){
-            const empleado = await db.Empleados.findOne({Nombre: empleadoId})
+            const empleado = await db.Empleados.findOne({_id: empleadoId})
 
             if (empleado) {
                 empleadoIds.push(empleado._id);
@@ -37,17 +37,15 @@ export const postIndicador = async (req, res) => {
             Indicador,
             Descripcion,
             Categoria,
-            FechaInicio,
-            FechaFinal,
+            FechaInicio: new Date(FechaInicio),
+            FechaFinal: new Date(FechaFinal),
             Formula,
             Frecuencia,
-            Cumplimiento,
+            Cumplimiento: Number(Cumplimiento),
             Area,
             Empleados: empleadoIds,
             Tareas,
-            Panel: {
-                $oid: panel._id
-            },
+            Panel: panel._id,
             estado: true
         }
         await db.Indicadores.insertOne(nuevoIndicador)

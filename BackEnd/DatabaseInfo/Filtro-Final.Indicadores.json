@@ -30,10 +30,8 @@
     ],
     "Tareas": ["Terminar el renderizado", "Texturizar Casas"],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -67,10 +65,8 @@
     ],
     "Tareas": ["Terminar el renderizado", "Texturizar Casas"],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -104,10 +100,8 @@
     ],
     "Tareas": ["Analizar datos de ventas", "Ejecutar estrategias de marketing"],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -144,10 +138,8 @@
       "Analizar resultados de encuestas"
     ],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -184,10 +176,8 @@
       "Implementar mejoras en procesos de trabajo"
     ],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -209,7 +199,7 @@
     "Area": "Finanzas",
     "Empleados": [
       {
-        "Empleado":  {
+        "Empleado": {
           "$oid": "652431fcf40776a48e9b0319"
         }
       },
@@ -224,10 +214,8 @@
       "Preparar estados financieros"
     ],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -264,10 +252,8 @@
       "Realizar seguimiento de entregas"
     ],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -289,7 +275,7 @@
     "Area": "Logística",
     "Empleados": [
       {
-        "Empleado":  {
+        "Empleado": {
           "$oid": "652431fcf40776a48e9b0319"
         }
       },
@@ -304,10 +290,8 @@
       "Gestionar pedidos de productos"
     ],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -344,10 +328,8 @@
       "Implementar medidas de seguridad"
     ],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -384,10 +366,8 @@
       "Implementar estrategias de retención"
     ],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -424,10 +404,8 @@
       "Optimizar estrategias de adquisición"
     ],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -464,10 +442,8 @@
       "Optimizar campañas de marketing"
     ],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -504,10 +480,8 @@
       "Implementar estrategias de retención de empleados"
     ],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   },
   {
@@ -544,10 +518,8 @@
       "Optimizar procesos de producción"
     ],
     "Panel": {
-    "oid": {
       "$oid": "65243c8ef40776a48e9b0323"
-    }
-  },
+    },
     "estado": true
   }
 ]

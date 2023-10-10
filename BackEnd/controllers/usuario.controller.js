@@ -17,7 +17,7 @@ export const postUsuario = async (req, res) => {
   try {
     const { usuario, password, Empleado } = req.body;
     const db = await conection();
-    const empleado = await db.Empleados.findOne({ Nombre: Empleado });
+    const empleado = await db.Empleados.findOne({ _id: Empleado });
 
     if (!empleado) {
       return res.status(404).json({ error: "Empleado no encontrado" });
