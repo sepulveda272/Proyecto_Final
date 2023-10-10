@@ -1,11 +1,12 @@
 import { Router } from "express";
-import { getEmpleado, postEmpleado, deleteEmpleado } from "../controllers/empleados.controller.js";
+import { getEmpleado, postEmpleado, deleteEmpleado, updateEmpleado } from "../controllers/empleados.controller.js";
 
 const router = Router();
 
 router.get("/", getEmpleado);
 router.post("/", postEmpleado);
 router.delete("/:id", deleteEmpleado);
+router.put("/:id", updateEmpleado)
 
 /**
  * @swagger

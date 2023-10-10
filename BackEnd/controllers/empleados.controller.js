@@ -26,7 +26,7 @@ export const postEmpleado = async (req, res) => {
     } = req.body;
     const db = await conection();
 
-    const searchCargo = new ObjectId(Cargo)
+    const searchCargo = new ObjectId(Cargo);
 
     const cargo = await db.Cargos.findOne({ _id: searchCargo });
 
@@ -75,5 +75,54 @@ export const deleteEmpleado = async (req, res) => {
     res
       .status(500)
       .json({ error: "Hubo un error al eliminar al empleado de la database" });
+  }
+};
+
+export const updateEmpleado = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const empleadoId = new ObjectId(id);
+    const empleadosDB = (await conection()).Empleados;
+
+    const {
+      Nombre,
+      Apellido,
+      Telefono,
+      Cargo,
+      Email,
+      TipoDeDocumento,
+      DNI,
+      Direccion,
+      Imagen,
+    } = req.body;
+    const db = await conection();
+
+    const searchCargo = new ObjectId(Cargo);
+
+    const cargo = await db.Cargos.findOne({ _id: searchCargo });
+
+    if (!cargo) {
+      return res.status(404).json({ error: "Cargo no encontrado" });
+    }
+
+    await empleadosDB.updateOne(
+      { _id: empleadoId },
+      {
+        $set: {
+          Nombre,
+          Apellido,
+          Telefono: Number(Telefono),
+          Cargo: cargo._id,
+          Email,
+          TipoDeDocumento,
+          DNI: Number(DNI),
+          Direccion,
+          Imagen,
+        },
+      }
+    );
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "Hubo un error al Actualizar al empleado" });
   }
 };

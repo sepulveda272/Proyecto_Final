@@ -1,11 +1,12 @@
 import { Router } from "express";
-import { getPaneles, postPanel,deletePanel } from "../controllers/paneles.controller.js";
+import { getPaneles, postPanel,deletePanel, updatePanel } from "../controllers/paneles.controller.js";
 
 const router = Router();
 
 router.get("/", getPaneles);
 router.post("/", postPanel);
 router.delete("/:id", deletePanel);
+router.put("/:id", updatePanel)
 
 /**
  * @swagger

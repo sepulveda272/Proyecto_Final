@@ -24,8 +24,8 @@ export const postResporte = async (req, res) => {
     let { FechaReparacion } = req.body;
     const db = await conection();
 
-    const searchEmpleado = new ObjectId(Indicadores)
-    
+    const searchEmpleado = new ObjectId(Indicadores);
+
     const indicador = await db.Indicadores.findOne({ _id: searchEmpleado });
 
     if (!Reparado) {
@@ -72,5 +72,54 @@ export const deleteReporte = async (req, res) => {
     res
       .status(500)
       .json({ error: "Hubo un error al eliminar el reporte de la database" });
+  }
+};
+
+export const updateReporte = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const reporteId = new ObjectId(id);
+
+    const {
+      NombreReporte,
+      DescripcionReporte,
+      FechaEncuentro,
+      Reparacion,
+      Reparado,
+      Indicadores,
+    } = req.body;
+    let { FechaReparacion } = req.body;
+
+    const reporteDB = (await conection()).Reportes;
+    const db = await conection();
+    const searchEmpleado = new ObjectId(Indicadores);
+    const indicador = await db.Indicadores.findOne({ _id: searchEmpleado });
+
+    if (!Reparado) {
+      FechaReparacion = null;
+    }
+
+    if (!indicador) {
+      return res.status(404).json({ error: "Indicador no encontrado" });
+    }
+
+    await reporteDB.updateOne(
+      { _id: reporteId },
+      {
+        $set: {
+          NombreReporte,
+          DescripcionReporte,
+          FechaEncuentro: new Date(FechaEncuentro),
+          Reparacion: Number(Reparacion),
+          Reparado,
+          FechaReparacion,
+          Indicadores: indicador._id,
+        },
+      }
+    );
+
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "Hubo un error al Actualizar el reporte" });
   }
 };

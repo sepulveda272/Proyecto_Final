@@ -1,11 +1,12 @@
 import { Router } from "express";
-import { getUsuario,postUsuario,deleteUsuario } from "../controllers/usuario.controller.js";
+import { getUsuario,postUsuario,deleteUsuario, updateUsuario } from "../controllers/usuario.controller.js";
 
 const router = Router();
 
 router.get("/", getUsuario);
 router.post("/", postUsuario);
 router.delete("/:id", deleteUsuario);
+router.put("/:id",updateUsuario)
 
 /**
  * @swagger

@@ -18,7 +18,7 @@ export const postUsuario = async (req, res) => {
     const { usuario, password, Empleado } = req.body;
     const db = await conection();
 
-const searchEmpleado = new ObjectId(Empleado)
+    const searchEmpleado = new ObjectId(Empleado);
 
     const empleado = await db.Empleados.findOne({ _id: searchEmpleado });
 
@@ -67,11 +67,36 @@ export const deleteUsuario = async (req, res) => {
 
 export const updateUsuario = async (req, res) => {
   try {
+    const { id } = req.params;
+    const usuarioId = new ObjectId(id);
+    const { usuario, password, Empleado } = req.body;
+    const usuariosDB = (await conection()).Usuarios;
 
+    const db = await conection();
+    const searchEmpleado = new ObjectId(Empleado);
+    const empleado = await db.Empleados.findOne({ _id: searchEmpleado });
+
+    if (!empleado) {
+      return res.status(404).json({ error: "Empleado no encontrado" });
+    }
+
+    const salt = bcryptjs.genSaltSync();
+    req.body.password = bcryptjs.hashSync(password, salt);
+
+    usuariosDB.insertOneupdateOne(
+      { _id: usuarioId },
+      {
+        $set: {
+          Empleado: empleado._id,
+          usuario,
+          password: req.body.password,
+        },
+      }
+    );
   } catch (error) {
     console.log(error);
     res
       .status(500)
-      .json({ error: "Hubo un error al desactivar el usuario de la database" });
+      .json({ error: "Hubo un error al actualizar el usuario de la database" });
   }
 };
