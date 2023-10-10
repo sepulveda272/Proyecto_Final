@@ -117,68 +117,76 @@ table {
     justify-content: space-between;
     border: 1px solid #707070;
     border-radius: 31px;
-    padding: 21px;
+    height: 81px;
     align-items: center;
     width: 1700px;
 }
 
 
 .p1{
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     width: 256px;
     margin-bottom: 0;
 }
 
+.p1 span{
+    margin-left: 27px;
+}
+
 .p2{
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     width: 308px;
     margin-bottom: 0;
 }
 
+.p2 span{
+    margin-left: 20px;
+}
+
 .p3{
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     width: 124px;
     margin-bottom: 0;
     text-align: center;
 }
 
 .p4{
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     width: 175px;
     margin-bottom: 0;
     text-align: center;
 }
 
 .p5{
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     width: 241px;
     margin-bottom: 0;
     text-align: center;
 }
 
 .p6{
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     width: 111px;
     margin-bottom: 0;
     text-align: center;
 }
 
 .p7{
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     width: 135px;
     margin-bottom: 0;
     text-align: center;
 }
 
 .p8{
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     width: 195px;
     margin-bottom: 0;
     text-align: center;
 }
 
 .p9{
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     width: 176px;
     margin-bottom: 0;
     text-align: center;
@@ -197,19 +205,19 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .circle {
+}
+
+.circle {
     transform: rotate(-90deg);
     transform-origin: center;
     transition: stroke-dashoffset 0.5s linear;
-  }
-  
-  .percentage {
-    font-size: 24px;
+}
+
+.percentage {
+    font-size: 20px;
     margin-top: 10px;
-  }
-  
+}
+
 
 
 
