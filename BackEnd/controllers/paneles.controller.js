@@ -68,6 +68,7 @@ export const updatePanel = async (req, res) => {
       { _id: panelId },
       { $set: { Nombre, Descricao } }
     );
+    res.json({ message: "Se ha actualizado el panel", panel });
   } catch (error) {
     console.log(error);
     res

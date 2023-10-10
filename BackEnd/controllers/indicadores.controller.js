@@ -104,6 +104,12 @@ export const updateIndicador = async (req, res) => {
   try {
     const { id } = req.params;
     const indicadorId = new ObjectId(id);
+    const indicador = await indicadoresDB.findOne({
+      _id: indicadorId,
+    });
+    if (!indicador) {
+      return res.status(404).json({ error: "Indicador no encontrado" });
+    }
     const {
         Indicador,
         Descripcion,
@@ -161,6 +167,7 @@ export const updateIndicador = async (req, res) => {
         Panel: panel._id,
        } }
     );
+    res.json({ message: "Se ha actualizado el Indicador", indicador });
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: "Hubo un error al Actualizar el indicador" });

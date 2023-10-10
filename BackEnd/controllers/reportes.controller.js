@@ -79,6 +79,13 @@ export const updateReporte = async (req, res) => {
   try {
     const { id } = req.params;
     const reporteId = new ObjectId(id);
+    const reporteDB = (await conection()).Reportes;
+    const reporte = await reporteDB.findOne({
+      _id: reporteId,
+    });
+    if (!reporte) {
+      return res.status(404).json({ error: "Reporte no encontrado" });
+    }
 
     const {
       NombreReporte,
@@ -90,7 +97,6 @@ export const updateReporte = async (req, res) => {
     } = req.body;
     let { FechaReparacion } = req.body;
 
-    const reporteDB = (await conection()).Reportes;
     const db = await conection();
     const searchEmpleado = new ObjectId(Indicadores);
     const indicador = await db.Indicadores.findOne({ _id: searchEmpleado });
@@ -117,7 +123,7 @@ export const updateReporte = async (req, res) => {
         },
       }
     );
-
+    res.json({ message: "Se ha actualizado el reporte", reporte });
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: "Hubo un error al Actualizar el reporte" });

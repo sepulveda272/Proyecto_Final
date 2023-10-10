@@ -95,7 +95,15 @@ export const updateEmpleado = async (req, res) => {
       Direccion,
       Imagen,
     } = req.body;
-    const db = await conection();
+
+    const empleado = await empleadosDB.findOne({
+      _id: empleadoId,
+    });
+    if (!empleado) {
+      return res.status(404).json({ error: "Empleado no encontrado" });
+    }
+
+    const db = await conection()
 
     const searchCargo = new ObjectId(Cargo);
 
@@ -121,6 +129,7 @@ export const updateEmpleado = async (req, res) => {
         },
       }
     );
+    res.json({ message: "Se ha Actualizado correctamente el empleado", empleado });
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: "Hubo un error al Actualizar al empleado" });

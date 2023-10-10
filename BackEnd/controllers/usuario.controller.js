@@ -72,6 +72,13 @@ export const updateUsuario = async (req, res) => {
     const { usuario, password, Empleado } = req.body;
     const usuariosDB = (await conection()).Usuarios;
 
+    const usuarioss = await usuariosDB.findOne({
+      _id: usuarioId,
+    });
+    if (!usuario) {
+      return res.status(404).json({ error: "Usuario no encontrado" });
+    }
+
     const db = await conection();
     const searchEmpleado = new ObjectId(Empleado);
     const empleado = await db.Empleados.findOne({ _id: searchEmpleado });
@@ -93,6 +100,7 @@ export const updateUsuario = async (req, res) => {
         },
       }
     );
+    res.json({ message: "Se ha desactivado el usuario", usuarioss });
   } catch (error) {
     console.log(error);
     res
