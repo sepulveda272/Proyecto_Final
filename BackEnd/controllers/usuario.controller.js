@@ -17,7 +17,10 @@ export const postUsuario = async (req, res) => {
   try {
     const { usuario, password, Empleado } = req.body;
     const db = await conection();
-    const empleado = await db.Empleados.findOne({ _id: Empleado });
+
+const searchEmpleado = new ObjectId(Empleado)
+
+    const empleado = await db.Empleados.findOne({ _id: searchEmpleado });
 
     if (!empleado) {
       return res.status(404).json({ error: "Empleado no encontrado" });
@@ -54,6 +57,17 @@ export const deleteUsuario = async (req, res) => {
     }
     await usuariosDB.updateOne({ _id: usuarioId }, { $set: { estado: false } });
     res.json({ message: "Se ha desactivado el usuario", usuario });
+  } catch (error) {
+    console.log(error);
+    res
+      .status(500)
+      .json({ error: "Hubo un error al desactivar el usuario de la database" });
+  }
+};
+
+export const updateUsuario = async (req, res) => {
+  try {
+
   } catch (error) {
     console.log(error);
     res

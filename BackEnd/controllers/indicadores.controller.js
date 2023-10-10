@@ -28,7 +28,10 @@ export const postIndicador = async (req, res) => {
       Panel,
     } = req.body;
     const db = await conection();
-    const panel = await db.Paneles.findOne({ _id: Panel });
+
+    const searchPanel = new ObjectId(Panel);
+
+    const panel = await db.Paneles.findOne({ _id: searchPanel });
 
     if (!panel) {
       return res.status(404).json({ error: "Panel no encontrado" });
@@ -37,7 +40,8 @@ export const postIndicador = async (req, res) => {
     const empleadoIds = [];
 
     for (const empleadoId of Empleados) {
-      const empleado = await db.Empleados.findOne({ _id: empleadoId });
+      const searchEmpleado = new ObjectId(empleadoId);
+      const empleado = await db.Empleados.findOne({ _id: searchEmpleado });
 
       if (empleado) {
         empleadoIds.push(empleado._id);

@@ -23,7 +23,10 @@ export const postResporte = async (req, res) => {
     } = req.body;
     let { FechaReparacion } = req.body;
     const db = await conection();
-    const indicador = await db.Indicadores.findOne({ _id: Indicadores });
+
+    const searchEmpleado = new ObjectId(Indicadores)
+    
+    const indicador = await db.Indicadores.findOne({ _id: searchEmpleado });
 
     if (!Reparado) {
       FechaReparacion = null;

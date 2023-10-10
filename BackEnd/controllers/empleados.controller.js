@@ -25,7 +25,10 @@ export const postEmpleado = async (req, res) => {
       Imagen,
     } = req.body;
     const db = await conection();
-    const cargo = await db.Cargos.findOne({ _id: Cargo });
+
+    const searchCargo = new ObjectId(Cargo)
+
+    const cargo = await db.Cargos.findOne({ _id: searchCargo });
 
     if (!cargo) {
       return res.status(404).json({ error: "Cargo no encontrado" });
