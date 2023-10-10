@@ -1,8 +1,10 @@
 import React from 'react';
+import Nav from './Nav';
 
 const Report = () => {
   return (
     <div>
+      <Nav/>
       <h1>Report</h1>
       <form>
         <div>

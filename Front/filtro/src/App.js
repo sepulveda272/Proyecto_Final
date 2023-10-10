@@ -4,6 +4,7 @@ import Formulario from './components/Formulario';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Loading from './components/Loading.jsx';
 import Panel from './components/Panel.jsx';
+import Report from './components/Report';
 import Presentacion from './components/Presentacion.jsx';
 import './css/Presentacion.css';
 import './css/Panel.css';
@@ -32,6 +33,7 @@ function App() {
           <Route path="/inicio" element={<Presentacion />} />
           <Route path="/loading" element={<Loading />} />
           <Route path='/panel' element={<Panel/>}/>
+          <Route path="/Report" element={<Report />} />
         </Routes>
       </div>
     </>

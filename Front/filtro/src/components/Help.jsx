@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Nav = () => {
+const Help = () => {
     return (
         <div>
     <form action="https://formsubmit.co/sbstzuluaga@gmail.com" method="POST">
@@ -14,4 +14,4 @@ const Nav = () => {
     );
 };
 
-export default Nav;
+export default Help;
