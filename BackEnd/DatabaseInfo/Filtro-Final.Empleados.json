@@ -4,14 +4,14 @@
   },
   "Nombre": "Juan",
   "Apellido": "Pérez",
-  "Teléfono": "1234567890",
+  "Telefono": "1234567890",
   "Cargo": {
     "$oid": "6520c404f40776a48e9b02f8"
   },
   "Email": "juan.perez@example.com",
-  "Tipo de Documento": "Cédula de Ciudadanía",
+  "TipoDeDocumento": "Cédula de Ciudadanía",
   "DNI": "1234567890",
-  "Dirección": "Calle 123, Bogotá, Colombia",
+  "Direccion": "Calle 123, Bogotá, Colombia",
   "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
   "estado": true
 },
@@ -21,14 +21,14 @@
   },
   "Nombre": "Ana",
   "Apellido": "Gómez",
-  "Teléfono": "2345678901",
+  "Telefono": "2345678901",
   "Cargo": {
     "$oid": "6520c404f40776a48e9b02f9"
   },
   "Email": "ana.gomez@example.com",
-  "Tipo de Documento": "Cédula de Extranjería",
+  "TipoDeDocumento": "Cédula de Extranjería",
   "DNI": "2345678901",
-  "Dirección": "Avenida 456, Medellín, Colombia",
+  "Direccion": "Avenida 456, Medellín, Colombia",
   "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
   "estado": true
 },
@@ -38,14 +38,14 @@
   },
   "Nombre": "Carlos",
   "Apellido": "López",
-  "Teléfono": "3456789012",
+  "Telefono": "3456789012",
   "Cargo": {
     "$oid": "6520c404f40776a48e9b02fa"
   },
   "Email": "carlos.lopez@example.com",
-  "Tipo de Documento": "Pasaporte",
+  "TipoDeDocumento": "Pasaporte",
   "DNI": "3456789012",
-  "Dirección": "Carrera 789, Cali, Colombia",
+  "Direccion": "Carrera 789, Cali, Colombia",
   "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
   "estado": true
 },
@@ -55,14 +55,14 @@
   },
   "Nombre": "María",
   "Apellido": "Rodríguez",
-  "Teléfono": "4567890123",
+  "Telefono": "4567890123",
   "Cargo": {
     "$oid": "6520c404f40776a48e9b02fb"
   },
   "Email": "maria.rodriguez@example.com",
-  "Tipo de Documento": "Cédula de Ciudadanía",
+  "TipoDeDocumento": "Cédula de Ciudadanía",
   "DNI": "4567890123",
-  "Dirección": "Diagonal 1011, Barranquilla, Colombia",
+  "Direccion": "Diagonal 1011, Barranquilla, Colombia",
   "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
   "estado": true
 },
@@ -72,14 +72,14 @@
   },
   "Nombre": "Luis",
   "Apellido": "Martínez",
-  "Teléfono": "5678901234",
+  "Telefono": "5678901234",
   "Cargo": {
     "$oid": "6520c404f40776a48e9b02fc"
   },
   "Email": "luis.martinez@example.com",
-  "Tipo de Documento": "Cédula de Extranjería",
+  "TipoDeDocumento": "Cédula de Extranjería",
   "DNI": "5678901234",
-  "Dirección": "Calle 1213, Bogotá, Colombia",
+  "Direccion": "Calle 1213, Bogotá, Colombia",
   "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
   "estado": true
 },
@@ -89,14 +89,14 @@
   },
   "Nombre": "Elena",
   "Apellido": "Sánchez",
-  "Teléfono": "6789012345",
+  "Telefono": "6789012345",
   "Cargo": {
     "$oid": "6520c404f40776a48e9b02fd"
   },
   "Email": "elena.sanchez@example.com",
-  "Tipo de Documento": "Cédula de Ciudadanía",
+  "TipoDeDocumento": "Cédula de Ciudadanía",
   "DNI": "6789012345",
-  "Dirección": "Avenida 1617, Medellín, Colombia",
+  "Direccion": "Avenida 1617, Medellín, Colombia",
   "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
   "estado": true
 },
@@ -106,14 +106,14 @@
   },
   "Nombre": "Pedro",
   "Apellido": "Torres",
-  "Teléfono": "7890123456",
+  "Telefono": "7890123456",
   "Cargo": {
     "$oid": "6520c404f40776a48e9b02fe"
   },
   "Email": "pedro.torres@example.com",
-  "Tipo de Documento": "Pasaporte",
+  "TipoDeDocumento": "Pasaporte",
   "DNI": "7890123456",
-  "Dirección": "Carrera 1819, Cali, Colombia",
+  "Direccion": "Carrera 1819, Cali, Colombia",
   "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
   "estado": true
 },
@@ -123,14 +123,14 @@
   },
   "Nombre": "Sofía",
   "Apellido": "Fernández",
-  "Teléfono": "8901234567",
+  "Telefono": "8901234567",
   "Cargo": {
     "$oid": "6520c404f40776a48e9b02ff"
   },
   "Email": "sofia.fernandez@example.com",
-  "Tipo de Documento": "Cédula de Ciudadanía",
+  "TipoDeDocumento": "Cédula de Ciudadanía",
   "DNI": "8901234567",
-  "Dirección": "Diagonal 2021, Bogotá, Colombia",
+  "Direccion": "Diagonal 2021, Bogotá, Colombia",
   "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
   "estado": true
 },
@@ -140,14 +140,14 @@
   },
   "Nombre": "Diego",
   "Apellido": "Hernández",
-  "Teléfono": "9012345678",
+  "Telefono": "9012345678",
   "Cargo": {
     "$oid": "6520c404f40776a48e9b0300"
   },
   "Email": "diego.hernandez@example.com",
-  "Tipo de Documento": "Cédula de Extranjería",
+  "TipoDeDocumento": "Cédula de Extranjería",
   "DNI": "9012345678",
-  "Dirección": "Calle 2223, Medellín, Colombia",
+  "Direccion": "Calle 2223, Medellín, Colombia",
   "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
   "estado": true
 },
@@ -157,14 +157,14 @@
   },
   "Nombre": "Laura",
   "Apellido": "Díaz",
-  "Teléfono": "0123456789",
+  "Telefono": "0123456789",
   "Cargo": {
     "$oid": "6520c404f40776a48e9b0301"
   },
   "Email": "laura.diaz@example.com",
-  "Tipo de Documento": "Cédula de Ciudadanía",
+  "TipoDeDocumento": "Cédula de Ciudadanía",
   "DNI": "0123456789",
-  "Dirección": "Avenida 2425, Bogotá, Colombia",
+  "Direccion": "Avenida 2425, Bogotá, Colombia",
   "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
   "estado": true
 },
@@ -174,14 +174,14 @@
   },
   "Nombre": "Andrés",
   "Apellido": "García",
-  "Teléfono": "1234567890",
+  "Telefono": "1234567890",
   "Cargo": {
     "$oid": "6520c404f40776a48e9b0302"
   },
   "Email": "andres.garcia@example.com",
-  "Tipo de Documento": "Cédula de Ciudadanía",
+  "TipoDeDocumento": "Cédula de Ciudadanía",
   "DNI": "1234567890",
-  "Dirección": "Carrera 2627, Cali, Colombia",
+  "Direccion": "Carrera 2627, Cali, Colombia",
   "Imagen": "https://i.pinimg.com/originals/23/d8/ec/23d8ec34996d8cb5749d40bc8322b464.jpg",
   "estado": true
 }]
