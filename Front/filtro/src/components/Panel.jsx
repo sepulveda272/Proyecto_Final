@@ -46,9 +46,6 @@ const Panel = () => {
       
         <div className='fondo_white'>
           
-            
-              
-            
             <p className='title_panel'> Panel de Indicadores </p>
             <p className='text_panel'> Aqui puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo. Si quieres ver más detalles , dale click a uno de ellos para más información  </p>
 
@@ -75,33 +72,33 @@ const Panel = () => {
                   <tr className='body_filas'>
                     <td  colSpan={9}>
                       <div className='fila1'>
-                        <p className='p1'>Modelado 3D</p>
-                        <p className='p2'>Interes por ...</p>
+                        <p className='p1'><span>Modelado 3D</span></p>
+                        <p className='p2'><span>Interes por ...</span></p>
                         <p className='p3'>Baja</p>
                         <p className='p4'>12/05/21</p>
                         <p className='p5'>12/12/21</p>
                         <p className='p6'>Met.Agil</p>
                         <p className='p7'>1/4</p>
                         <p className='p8'>
-                        <div className="circle-loader">
-      <svg width="70" height="70">
-        <circle
-          className="circle"
-          cx="35"
-          cy="35"
-          r="31"
-          stroke={getCircleColor()}
-          strokeWidth="6"
-          fill="none"
-          strokeDasharray="251"
-          strokeDashoffset={(251 * (100 - percentage)) / 100}
-          style={{ animationDirection: animationDirection }}
-        />
-        <text x="35" y="35" textAnchor="middle" dy="0.3em" className="percentage">
-          {percentage}%
-        </text>
-      </svg>
-    </div>
+                          <div className="circle-loader">
+                            <svg width="60" height="60">
+                              <circle
+                                className="circle"
+                                cx="30"
+                                cy="30"
+                                r="27"
+                                stroke={getCircleColor()}
+                                strokeWidth="7"
+                                fill="none"
+                                strokeDasharray="251"
+                                strokeDashoffset={(251 * (100 - percentage)) / 100}
+                                style={{ animationDirection: animationDirection }}
+                              />
+                              <text x="30" y="30" textAnchor="middle" dy="0.3em" className="percentage">
+                                {percentage}%
+                              </text>
+                            </svg>
+                          </div>
                         </p>
                         <p className='p9'>Marketing</p>
                       </div>
