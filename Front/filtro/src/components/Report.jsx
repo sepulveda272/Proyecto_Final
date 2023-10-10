@@ -5,8 +5,9 @@ const Report = () => {
   return (
     <div>
       <Nav/>
-      <h1>Report</h1>
-      <form>
+      
+      <div className='App-header'>
+      <form className="form-container"><h1>Report</h1>
         <div>
           <label>Nombre del Reporte:</label>
           <input type="text" />
@@ -37,6 +38,7 @@ const Report = () => {
         </div>
         <button type="submit">Guardar</button>
       </form>
+      </div>
     </div>
   );
 };

@@ -101,9 +101,3 @@ height: 19px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
-
-.nav-user:hover .user-button {
-  display: block;
-  animation: fadeIn 0.3s ease-in-out;
-}
-

@@ -8,7 +8,7 @@ const Nav = () => {
 
   const handleUserClick = () => {
     setIsLoggedIn(!isLoggedIn);
-    setShowButton(true); // Mostrar el botón al hacer clic
+    setShowButton(true);
   };
 
   return (
@@ -27,7 +27,9 @@ const Nav = () => {
           <a href="#">Eliminar</a>
         </li>
         <li className="nav-logo nav-logol">
-          <img src="../KARIO_LOGO.png" alt="Logo" />
+          <Link to='/panel'>
+            <img src="../KARIO_LOGO.png" alt="Logo" />
+          </Link>
         </li>
         <li className="nav-item nav-logol">
           <img src="../Icon material-bug-report.svg" alt="Logo" />
@@ -35,7 +37,7 @@ const Nav = () => {
         </li>
         <li className="nav-item nav-logol">
           <img src="../boton-web-de-ayuda.png" alt="Logo" />
-          <a href="#">Ayuda</a>
+          <Link to='/Help'>Ayuda</Link>
         </li>
         <li className="nav-item nav-logolt">
           <img className='space' src="../configuraciones.png" alt="Logot" />
@@ -45,7 +47,7 @@ const Nav = () => {
       <div className="nav-user" onClick={handleUserClick}>
         <img src="https://avatars.githubusercontent.com/u/47305995?v=4" alt="Usuario" />
         {showButton && isLoggedIn ? (
-          <div className="user-buttont">
+          <div className="user-button">
             <Link to="/">Logout</Link>
           </div>
         ) : null}
