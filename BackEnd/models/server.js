@@ -9,6 +9,7 @@ import empleadosRouter from '../routes/empleados.routes.js';
 import indicadoresRouter from '../routes/indicadores.routes.js';
 import panelesRouter from '../routes/paneles.routes.js';
 import reportesRouter from '../routes/reportes.routes.js';
+import loginRouter from '../routes/login.routes.js';
 
 dotenv.config()
 
@@ -32,6 +33,7 @@ class Server{
         this.app.use("/indicadores", indicadoresRouter);
         this.app.use("/paneles", panelesRouter);
         this.app.use("/reportes", reportesRouter);
+        this.app.use("/login", loginRouter);
         this.app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
     }
 
