@@ -46,7 +46,9 @@
   }
 
   .superior{
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
   }
   
 .descrip{
@@ -111,3 +113,7 @@ opacity: 1;
     height: 92px;
   }
 
+.entradaIma{
+  width: 150px;
+  border-radius: 50%;
+}

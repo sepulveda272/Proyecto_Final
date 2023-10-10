@@ -10,7 +10,7 @@ function Inicio() {
       <h3>Media</h3>
     </div>
     <h1>Bienvenido de nuevo</h1>
-    <img></img>
+    <img className='entradaIma' src='https://avatars.githubusercontent.com/u/47305995?v=4'/>
     <h1>Nombre del Usuario</h1>
     <p>Usuario Rol</p>
   </div>
