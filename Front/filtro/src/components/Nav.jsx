@@ -29,20 +29,19 @@ const Nav = () => {
 
 
       <div className='aling_menu logo_nav'>
-        <img src="../KARIO_LOGO.png" alt="Logo" />
+      <Link to="/"><img src="../KARIO_LOGO.png" alt="Logo" /></Link>
       </div>
-
-
-      
+       
       <div className='aling_menu reportar'>
         <img src="../Icon material-bug-report.svg" alt="Logo" />
-        <a href="#">Reportar</a>
+        <Link to="/Report">Reportar</Link>
       </div>
 
       <div className='aling_menu ayuda'>
         <img src="../boton-web-de-ayuda.png" alt="Logo" />
-        <a href="#">Ayuda</a>
+        <Link to="/Help">Ayuda</Link>
       </div>
+
 
       <div className='aling_menu configuracion'>
         <img className='config' src="../configuraciones.png" alt="Logot" />
