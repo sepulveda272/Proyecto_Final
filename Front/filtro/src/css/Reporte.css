@@ -1,0 +1,50 @@
+
+.form-container {
+    background-color: #FFFFFF;
+    width: 936px;
+    height: 761px;
+    margin-top: 160px;
+    border: 1px solid #707070;
+    border-radius: 67px;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  
+  .label_text {
+    border: 1px solid #FFFFFF;
+    font-family: "Myriad Pro Light";
+    text-align: left;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+  }
+  
+ 
+  .form-container button {
+    margin-top: 38px;
+    background: #FF6F2C 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 35px;
+    opacity: 1;
+    text-align: center;
+    font-size: 25px;
+    height: 70px;
+    width: 336px;
+    color: #FFFFFF;
+    font-family: 'Myriad Pro', sans-serif;
+  }
+  
+  .form-container button:hover {
+    background-color: #707070;
+  }
+  
+  .enelCentro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    height: 100%; 
+  }
+
+  
