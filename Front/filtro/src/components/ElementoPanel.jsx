@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import '../css/ElementoPanel.css';
+import ver from '../ver.png'
 
 const ElementoPanel = () => {
   const [animationDirection, setAnimationDirection] = useState('forwards');
@@ -93,15 +94,32 @@ const ElementoPanel = () => {
               </td>
               <td className='border_no'>
                 <div className='menu-container'>
+                {isMenuOpen ? (
+                  <>
+                  <div className='btns_menu'>
+                    <div className='btns_menu2'>
+                      <button className="menu-button btn_edit" onClick={toggleMenu}>
+                        <span class="material-symbols-outlined">edit</span>
+                      </button>
+                      <button className="menu-button btn_del" onClick={toggleMenu}>
+                        <span className="material-symbols-outlined icon_delete">Delete</span>
+                      </button>
+                    </div>
+                    <div className='btns_menu2 '>
+                      <button className="menu-button btn_pre" onClick={toggleMenu}>
+                        <span class="material-symbols-outlined">preview</span>
+                      </button>
+                      <button className="menu-button btn_close" onClick={toggleMenu}>
+                        <span className="material-symbols-outlined icon_close">x</span>
+                      </button>
+                    </div>
+                  </div>
+                  </>
+                ) : (
                   <span className='material-symbols-outlined icon_menu' onClick={toggleMenu}>
                     Menu
                   </span>
-                  {isMenuOpen && (
-                    <div className="menu">
-                      <button className="menu-button">Editar</button>
-                      <button className="menu-button">Eliminar</button>
-                    </div>
-                  )}
+                )}
                 </div>
               </td>
             </tr>

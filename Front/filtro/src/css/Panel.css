@@ -221,5 +221,52 @@ table {
 }
 
 
+.btns_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
 
+.btns_menu2{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.menu-button {
+    background-color: white;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+
+.btn_edit:hover{
+    background-color: #FF7221;
+    color: white;
+}
+
+.btn_del:hover{
+    background-color: #FF7221;
+    color: white;
+}
+
+.btn_pre:hover{
+    background-color: #FF7221;
+    color: white;
+}
+
+.btn_close{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+}
+.btn_close:hover{
+    background-color: #ad1616;
+}
 
