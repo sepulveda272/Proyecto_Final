@@ -35,7 +35,7 @@ const Panel = () => {
         <ElementoPanel />
       )}
 
-      <button onClick={toggleReport}>Mostrar Informe</button>
+      {/* <button onClick={toggleReport}>Mostrar Informe</button> */}
     </Fragment>
   );
 };
