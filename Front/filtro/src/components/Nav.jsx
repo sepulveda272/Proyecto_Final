@@ -4,16 +4,17 @@ import '../css/Nav.css';
 
 const Nav = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [showButton, setShowButton] = useState(false);
 
   const handleUserClick = () => {
     setIsLoggedIn(!isLoggedIn);
-    setShowButton(true);
   };
 
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    window.location.href = '/';
+  };
   return (
     <nav className="nav">
-      
       <div className='aling_menu anadir'>
         <img src="../anadir.png" alt="Logo" />
         <a href="#">Añadir</a>    
@@ -27,9 +28,8 @@ const Nav = () => {
         <a href="#">Eliminar</a>
       </div>
 
-
       <div className='aling_menu logo_nav'>
-      <Link to="/"><img src="../KARIO_LOGO.png" alt="Logo" /></Link>
+        <img src="../KARIO_LOGO.png" alt="Logo" />
       </div>
        
       <div className='aling_menu reportar'>
@@ -42,19 +42,24 @@ const Nav = () => {
         <Link to="/Help">Ayuda</Link>
       </div>
 
-
       <div className='aling_menu configuracion'>
-        <img className='config' src="../configuraciones.png" alt="Logot" />
+        <img className='config' src="../configuraciones.png" alt="Logo" />
       </div>
       
       <div className='aling_menu notificacion'>
-        <img className='noti' src="../activar-el-boton-de-notificaciones.png" alt="Logot" />
+        <img className='noti' src="../activar-el-boton-de-notificaciones.png" alt="Logo" />
       </div>
 
-      <div className='aling_menu foto_user'>
+      <div className='aling_menu foto_user' onClick={handleUserClick}>
         <img src="https://avatars.githubusercontent.com/u/47305995?v=4" alt="Usuario" />
-      </div>
-      <div className="nav-notifications">
+        {isLoggedIn ? (
+          <div className="logout-button">
+            <button className="custom-button" onClick={handleLogout}>
+              Cerrar Sesión
+            </button>
+          </div>
+        ) : null}
+      </div>     <div className="nav-notifications">
         <i className="fas fa-bell"></i>
       </div>
     </nav>
