@@ -1,11 +1,22 @@
 import { Router } from "express";
 import { getPaneles, postPanel,deletePanel, updatePanel } from "../controllers/paneles.controller.js";
+import {validateJWT} from "../middlewares/validate.jwt.js"
+import validateDocuments from '../middlewares/validate.documents.js'
+import { check } from "express-validator";
 
 const router = Router();
 
 router.get("/", getPaneles);
-router.post("/", postPanel);
-router.delete("/:id", deletePanel);
+router.post("/", [
+   validateJWT,
+   check("Nombre","Nombre es obligatorio").not().isEmpty(),
+   check("Descricao","Descricao es obligatorio").not().isEmpty(),
+   validateDocuments
+],postPanel);
+router.delete("/:id", [
+   validateJWT,
+   validateDocuments
+],deletePanel);
 router.put("/:id", updatePanel)
 
 /**
@@ -90,5 +101,32 @@ router.put("/:id", updatePanel)
  *          404:
  *              description: Paneles no encontrado
  */
+
+/**
+* @swagger
+* /paneles/{id}:
+*  put:
+*      summary: Actualizar un Paneles
+*      tags: [Paneles]
+*      parameters:
+*          - in: path
+*            name: id
+*            schema: 
+*                type: string
+*            required: true
+*            description: el Paneles id
+*      requestBody:
+*          required: true 
+*          content:
+*              application/json:
+*                  schema:
+*                      type: object
+*                      $ref: '#/components/schemas/Paneles'
+*      responses:
+*          200:
+*              description: Paneles Actualizado
+*          404:
+*              description: Paneles no encontrado
+*/
 
 export default router;
