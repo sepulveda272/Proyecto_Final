@@ -39,9 +39,23 @@ const ElementoPanel = () => {
       <p className='text_panel'>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo. Si quieres ver más detalles, dale click a uno de ellos para más información</p>
       <div>
         <table>
-          <thead>
-            {/* ... Cabecera de la tabla ... */}
-          </thead>
+        <thead>
+                <tr className='title_filas'>
+                  <th colSpan={9}>
+                    <div className='fila_cabeza'>
+                      <p className='p1'>Indicador</p>
+                      <p className='p2'>Descripcion</p>
+                      <p className='p3'>Categoria</p>
+                      <p className='p4'>Fecha de Inicio</p>
+                      <p className='p5'>Fecha de Terminacion</p>
+                      <p className='p6'>Formula</p>
+                      <p className='p7'>Frecuencia</p>
+                      <p className='p8'>Cumplimiento</p>
+                      <p className='p9'>Area</p>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
           <tbody className='body_table'>
             <tr className='body_filas'>
               <td colSpan={9}>
