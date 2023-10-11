@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,9 +24,33 @@ const Formulario = () => {
     setMostrarInicio(true);
   };
 
-  if (redirigir) {
-    return <Navigate to="/panel" />;
+  const [usuario, setUsuario] = useState('')
+  const [password, setPAssword] = useState('')
+  const [error, setError ] = useState('')
+
+  const postData = ()=>{
+    if (!usuario || !password){
+      setError(alert ('Por favor, complete todos los campos obligatorios.')) ;
+      return;
+    }
+
+    axios.post("http://localhost:5026/login/logeate",
+    {
+      usuario,
+      password
+    }
+    ).then(()=>{
+      setMostrarInicio(true);
+      <Navigate to="/panel" />;
+  }).catch(function(error){
+    console.log(error);
+  })
+
   }
+
+  /* if (redirigir) {
+    return <Navigate to="/panel" />;
+  } */
 
   return (
     <div>
@@ -50,14 +75,14 @@ const Formulario = () => {
               <div className="form-content">
                 <div className='con_form_user'>
                   <h3 className='label_text'>Usuario</h3>
-                  <input type="email" className="input" />
+                  <input type="email" className="input" value={usuario} onChange={(e)=> setUsuario(e.target.value)} />
                 </div>
                 <div className='con_form_password'>
                   <h3 className='label_text'>Contraseña</h3>
-                  <input type="password" className="input" />
+                  <input type="password" className="input" value={password} onChange={(e)=> setPAssword(e.target.value)} />
                 </div>
                 <div>
-                  <button onClick={handleIniciarClick} className="form-btn">
+                  <button onClick={()=>postData()} className="form-btn">
                     Ingresar al panel
                   </button>
                 </div>
