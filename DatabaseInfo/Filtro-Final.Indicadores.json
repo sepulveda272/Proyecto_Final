@@ -18,14 +18,10 @@
     "Area": "Marketing",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0316"
-        }
+        "$oid": "652431fcf40776a48e9b0316"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0317"
-        }
+        "$oid": "652431fcf40776a48e9b0317"
       }
     ],
     "Tareas": ["Terminar el renderizado", "Texturizar Casas"],
@@ -53,14 +49,10 @@
     "Area": "Marketing",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0318"
-        }
+        "$oid": "652431fcf40776a48e9b0318"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0318"
-        }
+        "$oid": "652431fcf40776a48e9b0318"
       }
     ],
     "Tareas": ["Terminar el renderizado", "Texturizar Casas"],
@@ -88,14 +80,10 @@
     "Area": "Ventas",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0318"
-        }
+        "$oid": "652431fcf40776a48e9b0318"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0318"
-        }
+        "$oid": "652431fcf40776a48e9b0318"
       }
     ],
     "Tareas": ["Analizar datos de ventas", "Ejecutar estrategias de marketing"],
@@ -123,14 +111,10 @@
     "Area": "Servicio al Cliente",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       }
     ],
     "Tareas": [
@@ -161,14 +145,10 @@
     "Area": "Recursos Humanos",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       }
     ],
     "Tareas": [
@@ -199,14 +179,10 @@
     "Area": "Finanzas",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       }
     ],
     "Tareas": [
@@ -237,14 +213,10 @@
     "Area": "Operaciones",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       }
     ],
     "Tareas": [
@@ -275,14 +247,10 @@
     "Area": "Logística",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       }
     ],
     "Tareas": [
@@ -313,14 +281,10 @@
     "Area": "Recursos Humanos",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       }
     ],
     "Tareas": [
@@ -351,14 +315,10 @@
     "Area": "Ventas",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       }
     ],
     "Tareas": [
@@ -389,14 +349,10 @@
     "Area": "Ventas",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       }
     ],
     "Tareas": [
@@ -427,14 +383,10 @@
     "Area": "Marketing",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       }
     ],
     "Tareas": [
@@ -465,14 +417,10 @@
     "Area": "Recursos Humanos",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       }
     ],
     "Tareas": [
@@ -503,14 +451,10 @@
     "Area": "Operaciones",
     "Empleados": [
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       },
       {
-        "Empleado": {
-          "$oid": "652431fcf40776a48e9b0319"
-        }
+        "$oid": "652431fcf40776a48e9b0319"
       }
     ],
     "Tareas": [
