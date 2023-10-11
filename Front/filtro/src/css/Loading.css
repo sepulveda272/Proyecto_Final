@@ -1,0 +1,29 @@
+.divHijo{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: aparecerDesaparecer 4s infinite;
+}
+
+.tamano_img{
+    width: 196.61px;
+    height: 176.1px;
+}
+  
+  @keyframes aparecerDesaparecer {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+
