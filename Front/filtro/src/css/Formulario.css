@@ -11,9 +11,10 @@ body {
 body::before {
   content: "";
   background-image: url('https://jungle-nectarine-cef.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F8d0fd571-8a0f-45e2-8fc5-1a83818f8fc5%2F55f888fe-d3ca-4495-af79-ae001df9ed98%2Fpexels-pixabay-1594002x.png?table=block&id=9a33772d-2d5c-4d71-a5c7-767105d04aa1&spaceId=8d0fd571-8a0f-45e2-8fc5-1a83818f8fc5&width=1230&userId=&cache=v2');
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: absolute;
   top: 0;
   left: 0;
@@ -37,9 +38,9 @@ body::before {
   }
 }
 
-.form-container {
+.form-containerqq {
   background-color: #FFFFFF;
-  width: 936px;
+  width: 85rem;
   height: 761px;
   margin-top: 160px;
   border: 1px solid #707070;
@@ -58,7 +59,7 @@ body::before {
 }
 
 /* Ubicacion Elementos */
-.form-container {
+.form-containerqq {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,5 +159,4 @@ body::before {
   letter-spacing: -0.2px;
   margin-top: 36px;
 }
-
 
