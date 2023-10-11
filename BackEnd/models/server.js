@@ -3,6 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import swaggerUI from 'swagger-ui-express';
 import swaggerSpec from '../swaggerConfig.js';
+import cookieParser from 'cookie-parser'
 
 import usuariosRouter from '../routes/usuarios.routes.js';
 import empleadosRouter from '../routes/empleados.routes.js';
@@ -17,6 +18,7 @@ class Server{
     constructor(){
         this.app = express();
         this.port = process.env.PORT
+        this.app.use(cookieParser());
 
         this.middlewares();
         this.routes();
