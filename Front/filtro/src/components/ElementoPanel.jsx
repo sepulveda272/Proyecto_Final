@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import '../css/ElementoPanel.css';
-import ver from '../ver.png'
+
 
 const ElementoPanel = () => {
   const [animationDirection, setAnimationDirection] = useState('forwards');
