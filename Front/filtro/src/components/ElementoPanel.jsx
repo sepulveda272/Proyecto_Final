@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import '../css/ElementoPanel.css';
+import ver from '../ver.png'
 
 const ElementoPanel = () => {
   const [animationDirection, setAnimationDirection] = useState('forwards');
@@ -39,9 +40,23 @@ const ElementoPanel = () => {
       <p className='text_panel'>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo. Si quieres ver más detalles, dale click a uno de ellos para más información</p>
       <div>
         <table>
-          <thead>
-            {/* ... Cabecera de la tabla ... */}
-          </thead>
+        <thead>
+                <tr className='title_filas'>
+                  <th colSpan={9}>
+                    <div className='fila_cabeza'>
+                      <p className='p1'>Indicador</p>
+                      <p className='p2'>Descripcion</p>
+                      <p className='p3'>Categoria</p>
+                      <p className='p4'>Fecha de Inicio</p>
+                      <p className='p5'>Fecha de Terminacion</p>
+                      <p className='p6'>Formula</p>
+                      <p className='p7'>Frecuencia</p>
+                      <p className='p8'>Cumplimiento</p>
+                      <p className='p9'>Area</p>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
           <tbody className='body_table'>
             <tr className='body_filas'>
               <td colSpan={9}>
@@ -79,15 +94,32 @@ const ElementoPanel = () => {
               </td>
               <td className='border_no'>
                 <div className='menu-container'>
+                {isMenuOpen ? (
+                  <>
+                  <div className='btns_menu'>
+                    <div className='btns_menu2'>
+                      <button className="menu-button btn_edit" onClick={toggleMenu}>
+                        <span class="material-symbols-outlined">edit</span>
+                      </button>
+                      <button className="menu-button btn_del" onClick={toggleMenu}>
+                        <span className="material-symbols-outlined icon_delete">Delete</span>
+                      </button>
+                    </div>
+                    <div className='btns_menu2 '>
+                      <button className="menu-button btn_pre" onClick={toggleMenu}>
+                        <span class="material-symbols-outlined">preview</span>
+                      </button>
+                      <button className="menu-button btn_close" onClick={toggleMenu}>
+                        <span className="material-symbols-outlined icon_close">x</span>
+                      </button>
+                    </div>
+                  </div>
+                  </>
+                ) : (
                   <span className='material-symbols-outlined icon_menu' onClick={toggleMenu}>
                     Menu
                   </span>
-                  {isMenuOpen && (
-                    <div className="menu">
-                      <button className="menu-button">Editar</button>
-                      <button className="menu-button">Eliminar</button>
-                    </div>
-                  )}
+                )}
                 </div>
               </td>
             </tr>

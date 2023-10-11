@@ -13,44 +13,46 @@ const Nav = () => {
 
   return (
     <nav className="nav">
-      <ul className="nav-menu">
-        <li className="nav-item nav-logol">
-          <img src="../anadir.png" alt="Logo" />
-          <a href="#">Añadir</a>
-        </li>
-        <li className="nav-item nav-logol">
-          <img src="../actualizar.png" alt="Logo" />
-          <a href="#">Refrescar</a>
-        </li>
-        <li className="nav-item nav-logol">
-          <img src="../Icon material-delete-forever.svg" alt="Logo" />
-          <a href="#">Eliminar</a>
-        </li>
-        <li className="nav-logo nav-logol">
-          <Link to='/panel'>
-            <img src="../KARIO_LOGO.png" alt="Logo" />
-          </Link>
-        </li>
-        <li className="nav-item nav-logol">
-          <img src="../Icon material-bug-report.svg" alt="Logo" />
-          <Link to='/Report'>Reportar</Link>
-        </li>
-        <li className="nav-item nav-logol">
-          <img src="../boton-web-de-ayuda.png" alt="Logo" />
-          <Link to='/Help'>Ayuda</Link>
-        </li>
-        <li className="nav-item nav-logolt">
-          <img className='space' src="../configuraciones.png" alt="Logot" />
-          <img className='space' src="../activar-el-boton-de-notificaciones.png" alt="Logot" />
-        </li>
-      </ul>
-      <div className="nav-user" onClick={handleUserClick}>
+      
+      <div className='aling_menu anadir'>
+        <img src="../anadir.png" alt="Logo" />
+        <a href="#">Añadir</a>    
+      </div>
+      <div className='aling_menu refresh'>
+        <img src="../actualizar.png" alt="Logo" />
+        <a href="#">Refrescar</a>
+      </div>
+      <div className='aling_menu delete'>
+        <img src="../Icon material-delete-forever.svg" alt="Logo" />
+        <a href="#">Eliminar</a>
+      </div>
+
+
+      <div className='aling_menu logo_nav'>
+      <Link to="/"><img src="../KARIO_LOGO.png" alt="Logo" /></Link>
+      </div>
+       
+      <div className='aling_menu reportar'>
+        <img src="../Icon material-bug-report.svg" alt="Logo" />
+        <Link to="/Report">Reportar</Link>
+      </div>
+
+      <div className='aling_menu ayuda'>
+        <img src="../boton-web-de-ayuda.png" alt="Logo" />
+        <Link to="/Help">Ayuda</Link>
+      </div>
+
+
+      <div className='aling_menu configuracion'>
+        <img className='config' src="../configuraciones.png" alt="Logot" />
+      </div>
+      
+      <div className='aling_menu notificacion'>
+        <img className='noti' src="../activar-el-boton-de-notificaciones.png" alt="Logot" />
+      </div>
+
+      <div className='aling_menu foto_user'>
         <img src="https://avatars.githubusercontent.com/u/47305995?v=4" alt="Usuario" />
-        {showButton && isLoggedIn ? (
-          <div className="user-button">
-            <Link to="/">Logout</Link>
-          </div>
-        ) : null}
       </div>
       <div className="nav-notifications">
         <i className="fas fa-bell"></i>
