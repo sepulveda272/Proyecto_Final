@@ -4,6 +4,7 @@ import '../css/Nav.css';
 
 const Nav = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showPanel, setShowPanel] = useState(false);
 
   const handleUserClick = () => {
     setIsLoggedIn(!isLoggedIn);
@@ -13,6 +14,11 @@ const Nav = () => {
     setIsLoggedIn(false);
     window.location.href = '/';
   };
+
+  const togglePanel = () => {
+    setShowPanel(!showPanel);
+  };
+  
   return (
     <nav className="nav">
       <div className='aling_menu anadir'>
@@ -29,7 +35,14 @@ const Nav = () => {
       </div>
 
       <div className='aling_menu logo_nav'>
-        <img src="../KARIO_LOGO.png" alt="Logo" />
+        <img onClick={togglePanel} src="../KARIO_LOGO.png" alt="Logo" />
+        {showPanel && (
+          <div className="panel">
+            <button>Opción 1</button>
+            <button>Opción 2</button>
+            <button>Opción 3</button>
+          </div>
+        )}
       </div>
        
       <div className='aling_menu reportar'>
