@@ -76,7 +76,7 @@ table {
     width: 100%;
     border-spacing: 10px;
     padding: 1rem; 
-    margin-top: 50px;
+    margin-top: 25.5px;
 }
 
 /* Titulos filas Tabla */
@@ -90,8 +90,8 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
+
 .body_filas td{
     text-align: left;
     font-size: 24px;
@@ -125,6 +125,7 @@ table {
 
 .p1{
     border: 1px solid #ffffff;
+    border-radius: 2rem;
     width: 256px;
     margin-bottom: 0;
 }
@@ -187,6 +188,7 @@ table {
 
 .p9{
     border: 1px solid #ffffff;
+    border-radius: 2rem;
     width: 176px;
     margin-bottom: 0;
     text-align: center;
