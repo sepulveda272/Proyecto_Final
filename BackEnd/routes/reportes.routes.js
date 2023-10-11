@@ -1,26 +1,48 @@
 import { Router } from "express";
-import { getReportes, postResporte, deleteReporte, updateReporte } from "../controllers/reportes.controller.js";
-import {validateJWT} from "../middlewares/validate.jwt.js"
-import validateDocuments from '../middlewares/validate.documents.js'
+import {
+  getReportes,
+  postResporte,
+  deleteReporte,
+  updateReporte,
+} from "../controllers/reportes.controller.js";
+import { validateJWT } from "../middlewares/validate.jwt.js";
+import validateDocuments from "../middlewares/validate.documents.js";
 import { check } from "express-validator";
 
 const router = Router();
 
-router.get("/", getReportes);
-router.post("/", [
+router.get("/", [validateJWT, validateDocuments], getReportes);
+router.post(
+  "/",
+  [
     validateJWT,
-    check("NombreReporte","NombreReporte es obligatorio").not().isEmpty(),
-    check("DescripcionReporte","DescripcionReporte es obligatorio").not().isEmpty(),
-    check("FechaEncuentro","FechaEncuentro es obligatorio").not().isEmpty(),
-    check("Reparacion","Reparacion es obligatorio").not().isEmpty(),
-    check('Indicadores', 'No es un ID válido').isMongoId(),
-    validateDocuments
-],postResporte);
-router.delete("/:id",[
+    check("NombreReporte", "NombreReporte es obligatorio").not().isEmpty(),
+    check("DescripcionReporte", "DescripcionReporte es obligatorio")
+      .not()
+      .isEmpty(),
+    check("FechaEncuentro", "FechaEncuentro es obligatorio").not().isEmpty(),
+    check("Reparacion", "Reparacion es obligatorio").not().isEmpty(),
+    check("Indicadores", "No es un ID válido").isMongoId(),
+    validateDocuments,
+  ],
+  postResporte
+);
+router.delete("/:id", [validateJWT, validateDocuments], deleteReporte);
+router.put(
+  "/:id",
+  [
     validateJWT,
-    validateDocuments
-], deleteReporte);
-router.put("/:id", updateReporte)
+    check("NombreReporte", "NombreReporte es obligatorio").not().isEmpty(),
+    check("DescripcionReporte", "DescripcionReporte es obligatorio")
+      .not()
+      .isEmpty(),
+    check("FechaEncuentro", "FechaEncuentro es obligatorio").not().isEmpty(),
+    check("Reparacion", "Reparacion es obligatorio").not().isEmpty(),
+    check("Indicadores", "No es un ID válido").isMongoId(),
+    validateDocuments,
+  ],
+  updateReporte
+);
 
 /**
  * @swagger
@@ -82,7 +104,7 @@ router.put("/:id", updateReporte)
  *      responses:
  *          200:
  *              description: Todos los Reportes encontrados!
- *              content: 
+ *              content:
  *                  application/json:
  *                      schema:
  *                          type: array
@@ -94,10 +116,10 @@ router.put("/:id", updateReporte)
  * @swagger
  * /reportes/:
  *  post:
- *      summary: Create new Reportes 
+ *      summary: Create new Reportes
  *      tags: [Reportes]
  *      requestBody:
- *          required: true 
+ *          required: true
  *          content:
  *              application/json:
  *                  schema:
@@ -108,9 +130,9 @@ router.put("/:id", updateReporte)
  *              description: Nuevo Reportes fue creado!
  */
 
-    //! DELETE
+//! DELETE
 
- /**
+/**
  * @swagger
  * /reportes/{id}:
  *  delete:
@@ -119,7 +141,7 @@ router.put("/:id", updateReporte)
  *      parameters:
  *          - in: path
  *            name: id
- *            schema: 
+ *            schema:
  *                type: string
  *            required: true
  *            description: el Reportes id
@@ -130,32 +152,31 @@ router.put("/:id", updateReporte)
  *              description: Reportes no encontrado
  */
 
-
 /**
-* @swagger
-* /reportes/{id}:
-*  put:
-*      summary: Actualizar un Reportes
-*      tags: [Reportes]
-*      parameters:
-*          - in: path
-*            name: id
-*            schema: 
-*                type: string
-*            required: true
-*            description: el Reportes id
-*      requestBody:
-*          required: true 
-*          content:
-*              application/json:
-*                  schema:
-*                      type: object
-*                      $ref: '#/components/schemas/Reportes'
-*      responses:
-*          200:
-*              description: Reportes Actualizado
-*          404:
-*              description: Reportes no encontrado
-*/
+ * @swagger
+ * /reportes/{id}:
+ *  put:
+ *      summary: Actualizar un Reportes
+ *      tags: [Reportes]
+ *      parameters:
+ *          - in: path
+ *            name: id
+ *            schema:
+ *                type: string
+ *            required: true
+ *            description: el Reportes id
+ *      requestBody:
+ *          required: true
+ *          content:
+ *              application/json:
+ *                  schema:
+ *                      type: object
+ *                      $ref: '#/components/schemas/Reportes'
+ *      responses:
+ *          200:
+ *              description: Reportes Actualizado
+ *          404:
+ *              description: Reportes no encontrado
+ */
 
 export default router;

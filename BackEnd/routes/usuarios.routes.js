@@ -1,24 +1,40 @@
 import { Router } from "express";
-import { getUsuario,postUsuario,deleteUsuario, updateUsuario } from "../controllers/usuario.controller.js";
-import {validateJWT} from "../middlewares/validate.jwt.js"
-import validateDocuments from '../middlewares/validate.documents.js'
+import {
+  getUsuario,
+  postUsuario,
+  deleteUsuario,
+  updateUsuario,
+} from "../controllers/usuario.controller.js";
+import { validateJWT } from "../middlewares/validate.jwt.js";
+import validateDocuments from "../middlewares/validate.documents.js";
 import { check } from "express-validator";
 
 const router = Router();
 
-router.get("/", getUsuario);
-router.post("/", [
-   validateJWT,
-   check('Empleado', 'No es un ID válido').isMongoId(),
-   check("usuairo","usuairo es obligatorio").not().isEmpty(),
-   check("password","password es obligatorio").not().isEmpty(),
-   validateDocuments
-],postUsuario);
-router.delete("/:id", [
-   validateJWT,
-   validateDocuments
-],deleteUsuario);
-router.put("/:id",updateUsuario)
+router.get("/", [validateJWT, validateDocuments], getUsuario);
+router.post(
+  "/",
+  [
+    validateJWT,
+    check("Empleado", "No es un ID válido").isMongoId(),
+    check("usuairo", "usuairo es obligatorio").not().isEmpty(),
+    check("password", "password es obligatorio").not().isEmpty(),
+    validateDocuments,
+  ],
+  postUsuario
+);
+router.delete("/:id", [validateJWT, validateDocuments], deleteUsuario);
+router.put(
+  "/:id",
+  [
+    validateJWT,
+    check("Empleado", "No es un ID válido").isMongoId(),
+    check("usuairo", "usuairo es obligatorio").not().isEmpty(),
+    check("password", "password es obligatorio").not().isEmpty(),
+    validateDocuments,
+  ],
+  updateUsuario
+);
 
 /**
  * @swagger
@@ -60,7 +76,7 @@ router.put("/:id",updateUsuario)
  *      responses:
  *          200:
  *              description: Todos los Usuarios encontrados!
- *              content: 
+ *              content:
  *                  application/json:
  *                      schema:
  *                          type: array
@@ -72,10 +88,10 @@ router.put("/:id",updateUsuario)
  * @swagger
  * /usuarios/:
  *  post:
- *      summary: Create new Usuarios 
+ *      summary: Create new Usuarios
  *      tags: [Usuarios]
  *      requestBody:
- *          required: true 
+ *          required: true
  *          content:
  *              application/json:
  *                  schema:
@@ -86,9 +102,9 @@ router.put("/:id",updateUsuario)
  *              description: Nuevo Usuarios fue creado!
  */
 
-    //! DELETE
+//! DELETE
 
- /**
+/**
  * @swagger
  * /usuarios/{id}:
  *  delete:
@@ -97,7 +113,7 @@ router.put("/:id",updateUsuario)
  *      parameters:
  *          - in: path
  *            name: id
- *            schema: 
+ *            schema:
  *                type: string
  *            required: true
  *            description: el Usuarios id
@@ -109,30 +125,30 @@ router.put("/:id",updateUsuario)
  */
 
 /**
-* @swagger
-* /usuarios/{id}:
-*  put:
-*      summary: Actualizar un Usuarios
-*      tags: [Usuarios]
-*      parameters:
-*          - in: path
-*            name: id
-*            schema: 
-*                type: string
-*            required: true
-*            description: el Usuarios id
-*      requestBody:
-*          required: true 
-*          content:
-*              application/json:
-*                  schema:
-*                      type: object
-*                      $ref: '#/components/schemas/Usuarios'
-*      responses:
-*          200:
-*              description: Usuarios Actualizado
-*          404:
-*              description: Usuarios no encontrado
-*/
+ * @swagger
+ * /usuarios/{id}:
+ *  put:
+ *      summary: Actualizar un Usuarios
+ *      tags: [Usuarios]
+ *      parameters:
+ *          - in: path
+ *            name: id
+ *            schema:
+ *                type: string
+ *            required: true
+ *            description: el Usuarios id
+ *      requestBody:
+ *          required: true
+ *          content:
+ *              application/json:
+ *                  schema:
+ *                      type: object
+ *                      $ref: '#/components/schemas/Usuarios'
+ *      responses:
+ *          200:
+ *              description: Usuarios Actualizado
+ *          404:
+ *              description: Usuarios no encontrado
+ */
 
 export default router;

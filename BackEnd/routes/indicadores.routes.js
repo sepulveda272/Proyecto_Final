@@ -1,33 +1,58 @@
 import { Router } from "express";
-import { getIndicadores, postIndicador, deleteIndicador, updateIndicador } from "../controllers/indicadores.controller.js";
-import {validateJWT} from "../middlewares/validate.jwt.js"
-import validateDocuments from '../middlewares/validate.documents.js'
+import {
+  getIndicadores,
+  postIndicador,
+  deleteIndicador,
+  updateIndicador,
+} from "../controllers/indicadores.controller.js";
+import { validateJWT } from "../middlewares/validate.jwt.js";
+import validateDocuments from "../middlewares/validate.documents.js";
 import { check } from "express-validator";
 
 const router = Router();
 
-router.get("/", getIndicadores);
-router.post("/", [
+router.get("/", [validateJWT, validateDocuments], getIndicadores);
+router.post(
+  "/",
+  [
     validateJWT,
-    check("Indicador","Indicador es obligatorio").not().isEmpty(),
-    check("Descripcion","Descripcion es obligatorio").not().isEmpty(),
-    check("Categoria","Categoria es obligatorio").not().isEmpty(),
-    check("FechaInicio","FechaInicio es obligatorio").not().isEmpty(),
-    check("FechaFinal","FechaFinal es obligatorio").not().isEmpty(),
-    check("Formula","Formula es obligatorio").not().isEmpty(),
-    check("Frecuencia","Frecuencia es obligatorio").not().isEmpty(),
-    check("Cumplimiento","Cumplimiento es obligatorio").not().isEmpty(),
-    check("Area","Area es obligatorio").not().isEmpty(),
-    check('Empleados', 'No es un ID válido').isMongoId(),
-    check("Tareas","Tareas es obligatorio").not().isEmpty(),
-    check('Panel', 'No es un ID válido').isMongoId(),
-    validateDocuments
-],postIndicador);
-router.delete("/:id", [
+    check("Indicador", "Indicador es obligatorio").not().isEmpty(),
+    check("Descripcion", "Descripcion es obligatorio").not().isEmpty(),
+    check("Categoria", "Categoria es obligatorio").not().isEmpty(),
+    check("FechaInicio", "FechaInicio es obligatorio").not().isEmpty(),
+    check("FechaFinal", "FechaFinal es obligatorio").not().isEmpty(),
+    check("Formula", "Formula es obligatorio").not().isEmpty(),
+    check("Frecuencia", "Frecuencia es obligatorio").not().isEmpty(),
+    check("Cumplimiento", "Cumplimiento es obligatorio").not().isEmpty(),
+    check("Area", "Area es obligatorio").not().isEmpty(),
+    check("Empleados", "No es un ID válido").isMongoId(),
+    check("Tareas", "Tareas es obligatorio").not().isEmpty(),
+    check("Panel", "No es un ID válido").isMongoId(),
+    validateDocuments,
+  ],
+  postIndicador
+);
+router.delete("/:id", [validateJWT, validateDocuments], deleteIndicador);
+router.put(
+  "/:id",
+  [
     validateJWT,
-    validateDocuments
-],deleteIndicador);
-router.put("/:id", updateIndicador)
+    check("Indicador", "Indicador es obligatorio").not().isEmpty(),
+    check("Descripcion", "Descripcion es obligatorio").not().isEmpty(),
+    check("Categoria", "Categoria es obligatorio").not().isEmpty(),
+    check("FechaInicio", "FechaInicio es obligatorio").not().isEmpty(),
+    check("FechaFinal", "FechaFinal es obligatorio").not().isEmpty(),
+    check("Formula", "Formula es obligatorio").not().isEmpty(),
+    check("Frecuencia", "Frecuencia es obligatorio").not().isEmpty(),
+    check("Cumplimiento", "Cumplimiento es obligatorio").not().isEmpty(),
+    check("Area", "Area es obligatorio").not().isEmpty(),
+    check("Empleados", "No es un ID válido").isMongoId(),
+    check("Tareas", "Tareas es obligatorio").not().isEmpty(),
+    check("Panel", "No es un ID válido").isMongoId(),
+    validateDocuments,
+  ],
+  updateIndicador
+);
 
 /**
  * @swagger
@@ -114,7 +139,7 @@ router.put("/:id", updateIndicador)
  *      responses:
  *          200:
  *              description: Todos los Indicadores encontrados!
- *              content: 
+ *              content:
  *                  application/json:
  *                      schema:
  *                          type: array
@@ -126,10 +151,10 @@ router.put("/:id", updateIndicador)
  * @swagger
  * /indicadores/:
  *  post:
- *      summary: Create new Indicadores 
+ *      summary: Create new Indicadores
  *      tags: [Indicadores]
  *      requestBody:
- *          required: true 
+ *          required: true
  *          content:
  *              application/json:
  *                  schema:
@@ -140,9 +165,9 @@ router.put("/:id", updateIndicador)
  *              description: Nuevo Indicadores fue creado!
  */
 
-    //! DELETE
+//! DELETE
 
- /**
+/**
  * @swagger
  * /indicadores/{id}:
  *  delete:
@@ -151,7 +176,7 @@ router.put("/:id", updateIndicador)
  *      parameters:
  *          - in: path
  *            name: id
- *            schema: 
+ *            schema:
  *                type: string
  *            required: true
  *            description: el Indicadores id
@@ -162,32 +187,31 @@ router.put("/:id", updateIndicador)
  *              description: Indicadores no encontrado
  */
 
-
 /**
-* @swagger
-* /indicadores/{id}:
-*  put:
-*      summary: Actualizar un Indicadores
-*      tags: [Indicadores]
-*      parameters:
-*          - in: path
-*            name: id
-*            schema: 
-*                type: string
-*            required: true
-*            description: el Indicadores id
-*      requestBody:
-*          required: true 
-*          content:
-*              application/json:
-*                  schema:
-*                      type: object
-*                      $ref: '#/components/schemas/Indicadores'
-*      responses:
-*          200:
-*              description: Indicadores Actualizado
-*          404:
-*              description: Indicadores no encontrado
-*/
+ * @swagger
+ * /indicadores/{id}:
+ *  put:
+ *      summary: Actualizar un Indicadores
+ *      tags: [Indicadores]
+ *      parameters:
+ *          - in: path
+ *            name: id
+ *            schema:
+ *                type: string
+ *            required: true
+ *            description: el Indicadores id
+ *      requestBody:
+ *          required: true
+ *          content:
+ *              application/json:
+ *                  schema:
+ *                      type: object
+ *                      $ref: '#/components/schemas/Indicadores'
+ *      responses:
+ *          200:
+ *              description: Indicadores Actualizado
+ *          404:
+ *              description: Indicadores no encontrado
+ */
 
 export default router;
