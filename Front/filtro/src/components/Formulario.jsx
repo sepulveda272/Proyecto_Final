@@ -1,14 +1,41 @@
-import axios from 'axios'
 import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Presentacion from './Presentacion.jsx';
+import axios from 'axios'; // Asegúrate de importar axios
+
 import '../css/Formulario.css';
 
 const Formulario = () => {
   const [mostrarInicio, setMostrarInicio] = useState(false);
   const [redirigir, setRedirigir] = useState(false);
+  const [usuario, setUsuario] = useState('');
+  const [password, setPAssword] = useState('');
+  const [error, setError] = useState('');
 
+  const handleIniciarClick = () => {
+    if (!usuario || !password) {
+      setError('Por favor, complete todos los campos obligatorios.');
+      return;
+    }
+
+    // Realizar la solicitud POST para la autenticación del usuario
+    axios
+      .post("http://localhost:5026/login/logeate", {
+        withCredentials: true,
+        usuario,
+        password
+      })
+      .then((response) => {
+        setMostrarInicio(true);
+        document.cookie = (`token = ${response.data.token}`)
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+        setError('Hubo un problema al iniciar sesión. Por favor, inténtalo de nuevo.');
+      });
+  };
 
   useEffect(() => {
     if (mostrarInicio) {
@@ -20,34 +47,9 @@ const Formulario = () => {
     }
   }, [mostrarInicio]);
 
-  const handleIniciarClick = () => {
-    setMostrarInicio(true);
-  };
-
-  const [usuario, setUsuario] = useState('')
-  const [password, setPAssword] = useState('')
-  const [error, setError ] = useState('')
-
-  const postData = ()=>{
-    if (!usuario || !password){
-      setError(alert ('Por favor, complete todos los campos obligatorios.')) ;
-      return;
-    }
-
-    axios.post("http://localhost:5026/login/logeate",
-    {
-      usuario,
-      password
-    }
-    ).then(()=>{
-      setMostrarInicio(true);
-      <Navigate to="/panel" />;
-  }).catch(function(error){
-    console.log(error);
-  })
-
+  if (redirigir) {
+    return <Navigate to="/panel" />;
   }
-
   /* if (redirigir) {
     return <Navigate to="/panel" />;
   } */
@@ -75,14 +77,14 @@ const Formulario = () => {
               <div className="form-content">
                 <div className='con_form_user'>
                   <h3 className='label_text'>Usuario</h3>
-                  <input type="email" className="input" value={usuario} onChange={(e)=> setUsuario(e.target.value)} />
+                  <input type="text" className="input" value={usuario} onChange={(e)=> setUsuario(e.target.value)} />
                 </div>
                 <div className='con_form_password'>
                   <h3 className='label_text'>Contraseña</h3>
                   <input type="password" className="input" value={password} onChange={(e)=> setPAssword(e.target.value)} />
                 </div>
                 <div>
-                  <button onClick={()=>postData()} className="form-btn">
+                  <button type='button' onClick={()=>handleIniciarClick()} className="form-btn">
                     Ingresar al panel
                   </button>
                 </div>
