@@ -33,6 +33,7 @@ const Formulario = () => {
 
 {
   !mostrarInicio? (
+    <div className='form-position'>
     <div className="form-containerqq">
       <div className='superior'>
         <img className="logito_form" src="../KARIO_LOGO.png" alt="KARIO Logo" />
@@ -67,6 +68,7 @@ const Formulario = () => {
       </form>
 
       <p className='problemas_form'>Tienes problemas para ingresar? Por favor contactarse con asistencia técnica lo más pronto posible</p>
+    </div>
     </div>
   ) :  <Presentacion />
 }

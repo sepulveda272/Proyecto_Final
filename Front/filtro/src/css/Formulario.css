@@ -38,11 +38,18 @@ body::before {
   }
 }
 
+.form-position{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 .form-containerqq {
   background-color: #FFFFFF;
   width: 85rem;
-  height: 761px;
-  margin-top: 160px;
+  height: 75rem;
   border: 1px solid #707070;
   border-radius: 67px;
   animation: fadeIn 0.5s ease;

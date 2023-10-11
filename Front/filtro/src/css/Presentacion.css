@@ -9,18 +9,25 @@
     }
   }
   
-  .form-container-present {
+.form-position{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+  .form-container-presentqq {
     background-color: #FFFFFF;
-    width: 936px;
-    height: 549px;
-    margin-top: 266px;
+    width: 94rem;
+    height: 55rem;
     border: 1px solid #ffffff;
     border-radius: 67px;
     animation: fadeIn 0.5s ease;
   }
   
 
-.form-container-present{
+.form-container-presentqq{
     display: flex;
     flex-direction: column;
     align-items: center;
