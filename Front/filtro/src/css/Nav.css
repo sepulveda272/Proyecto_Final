@@ -1,103 +1,140 @@
 
-
-
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px;
-    border-bottom: 3px solid #707070;
-  }
-  
-  
-
-.nav-logo{
-    margin-left: 5%;
-    margin-right: 12%;
-}
-
-.nav-logolt img {
-top: 35px;
-left: 1769px;
-width: 19px;
-height: 19px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  height: 81.5px;
 }
 
 
-  .nav-logol img {
-    top: 32px;
-    left: 423px;
-    width: 27px;
-    height: 27px;
-    margin-right: 2%;
-  }
-  
-.space{
-    margin-left: 8%;
-    margin-right: 8%;
-}
 
-  .nav-menu {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex: 1;
-    justify-content: center;
-  }
-  
-  .nav-item {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    color: black;
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-  }
-
-  
-  
-  .nav-user {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    margin-right: 5%;
-    margin-left: 2%;
-  }
-  
-  .nav-user img {
-    top: 16px;
-  left: 1851px;
-  width: 53px;
-  height: 53px;
-    border-radius: 50%;
-  }
-  
- /* En tu archivo Nav.css */
-
-.nav-user {
-  position: relative;
+.aling_menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.user-buttont {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 5px 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+.aling_menu a{
+  text-decoration: none;
+  color: black;
+}
+
+.anadir{
+  border: 1px solid #ffff;
+  width: 108px;
+  height: 31px;
+  margin-left: 188px;
+  margin-top: 31px;
+}
+
+.anadir img{
+  height: 31px;
+  width: 31px;
+}
+
+.refresh{
+  border: 1px solid #ffff;
+  width: 127.85px;
+  height: 26.89px;
+  margin-left: 127.07px;
+  margin-top: 32.06px;
+}
+
+.refresh img{
+  height: 26.89px;
+  width: 26.85px;
+}
+
+.delete{
+  border: 1px solid #ffff;
+  width: 115.98px;
+  height: 32.11px;
+  margin-left: 127.07px;
+  margin-top: 29.39px;
+}
+
+.delete img{
+  height: 32.11px;
+  width: 24.98px;
+}
+
+.logo_nav{
+  border: 1px solid #ffff;
+  width: 41.72px;
+  height: 37.37px;
+  margin-left: 145.16px;
+  margin-top: 24.13px;
+}
+
+.logo_nav img{
+  height: 37.37px;
+  width: 41.72px;
+}
+
+.reportar {
+  border: 1px solid #ffff;
+  width: 144.04px;
+  height: 38px;
+  margin-left: 237.14px;
+  margin-top: 23.5px;
+}
+
+.reportar img{
+  height: 38px;
+  width: 33.78px;
+}
+
+.ayuda {
+  border: 1px solid #ffff;
+  width: 115.31px;
+  height: 34.05px;
+  margin-left: 127.07px;
+  margin-top: 27.45px;
+}
+
+.ayuda img{
+  height: 34.05px;
+  width: 34.05px;
+}
+
+.configuracion {
+  border: 1px solid #ffff;
+  width: 19.04px;
+  height: 19.05px;
+  margin-left: 164.56px;
+  margin-top: 34.73px;
+}
+
+.config{
+  height: 19.05px;
+  width: 19.05px;
+}
+
+.notificacion {
+  border: 1px solid #ffff;
+  width: 20.62px;
+  height: 20.17px;
+  margin-left: 21.18px;
+  margin-top: 34.73px;
+}
+
+.noti{
+  height: 20.17px;
+  width: 20.62px;
+}
+
+.foto_user img{
+  height: 53px;
+  width: 53px;
+  border-radius: 96px;
+  border: 1px solid #ffff;
+  margin-left: 21.18px;
+  margin-bottom: 0px;
 }
