@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Nav.css';
 
 const Nav = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
+  const handleUserClick = () => {
+    setIsLoggedIn(!isLoggedIn);
+    setShowButton(true);
+  };
+
   return (
     <nav className="nav">
       
@@ -50,7 +59,6 @@ const Nav = () => {
         <i className="fas fa-bell"></i>
       </div>
     </nav>
-
   );
 };
 

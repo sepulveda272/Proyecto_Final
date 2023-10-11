@@ -25,16 +25,29 @@ body::before {
 
 
 
-/* FORMULARIO DE LOGIN */
-/* Fondo */
-.form-container{
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-container {
   background-color: #FFFFFF;
   width: 936px;
   height: 761px;
   margin-top: 160px;
   border: 1px solid #707070;
   border-radius: 67px;
+  animation: fadeIn 0.5s ease;
 }
+
+
 
 /* Ubicacion */
 .App-header {

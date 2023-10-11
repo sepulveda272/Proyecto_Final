@@ -8,6 +8,7 @@ const Formulario = () => {
   const [mostrarInicio, setMostrarInicio] = useState(false);
   const [redirigir, setRedirigir] = useState(false);
 
+
   useEffect(() => {
     if (mostrarInicio) {
       const timeoutId = setTimeout(() => {
