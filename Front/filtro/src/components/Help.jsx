@@ -9,7 +9,6 @@ const refForm = useRef();
 
 const hendleSubmit = (event) =>{
   event.preventDefault();
-  
   const serviceId = "service_jmy5wha"
   const templateId = "template_7v7666d"
 
@@ -24,17 +23,25 @@ const hendleSubmit = (event) =>{
         <div>
         <Nav />
         <div className='App-header'>
-          <form ref={refForm} action='' onSubmit={handleSubmit} class="formulario">
+          <form ref={refForm} onSubmit={hendleSubmit} action='' class="formulario">
             
             <div className='ayudad'><h1>Help</h1><br/>
-              <h3>Nombre</h3>
-              <input class="my-input" type="text" name="Name" placeholder="Nombre" required />
+              <fieldset>
+                <h3>Nombre</h3>
+              <input name='from_name' class="my-input" type="text" placeholder="Nombre" required />
+              </fieldset>
+              <fieldset>
               <h3>Email</h3>
-              <input class="my-input" type="email" name="Email" placeholder="Correo electrónico" required />
+              <input name='email' class="my-input" type="email"  placeholder="Correo electrónico" required />
+              </fieldset>
+              <fieldset>
               <h3>Tema</h3>
-              <input class="my-input" type="text" name="Tema" placeholder="Tema" required />
+              <input name='tema' class="my-input" type="text"  placeholder="Tema" required />
+              </fieldset>
+              <fieldset>
               <h3>Descripcion</h3>
-              <input class="my-input" type="text" name="Descripcion" placeholder="Descripción" required />
+              <input name='des' class="my-input" type="text"  placeholder="Descripción" required />
+              </fieldset>
               <button class="my-button" type="submit">Enviar</button>
             </div>
           </form>
