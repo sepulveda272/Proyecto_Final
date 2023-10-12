@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import '../css/Nav.css';
 
@@ -13,12 +14,25 @@ const Nav = () => {
   const handleLogout = () => {
     setIsLoggedIn(false);
     document.cookie = ("token=; expires=Thu, 01 Jan 1970 00:00:00 UTC;")
+    document.cookie = ("idCokki=; expires=Thu, 01 Jan 1970 00:00:00 UTC;")
     window.location.href = '/';
   };
 
   const togglePanel = () => {
     setShowPanel(!showPanel);
   };
+
+  const [apiData,setApiData] = useState([])
+
+  useEffect(()=>{
+    axios.get("http://localhost:5026/paneles")
+    .then((res)=>{
+      setApiData(res.data);
+    })
+    .catch((error) => {
+      console.error('Error al obtener datos:', error);
+    });
+  }, [])
   
   return (
    <div>
@@ -37,15 +51,17 @@ const Nav = () => {
       </div>
 
       <div className='aling_menu logo_nav'>
-        <img onClick={togglePanel} src="../KARIO_LOGO.png" alt="Logo" />
-        {showPanel && (
-          <div className="panel">
-            <Link to="/panel"><button className='custom-button'>Opción 1</button></Link>
-            <Link to="/panel"><button className='custom-button'>Opción 2</button></Link>
-            <Link to="/panel"><button className='custom-button'>Opción 3</button></Link>
-          </div>
-        )}
-      </div>
+          <img onClick={togglePanel} src="../KARIO_LOGO.png" alt="Logo" />
+          {showPanel && (
+            <div className="panel">
+              {apiData.map((data, index) => (
+                <Link to="/panel" key={index}>
+                  <button className='custom-button'>{data.Nombre}</button>
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
        
       <div className='aling_menu reportar'>
         <img src="../Icon material-bug-report.svg" alt="Logo" />

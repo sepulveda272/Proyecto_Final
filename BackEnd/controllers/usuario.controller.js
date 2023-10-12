@@ -5,11 +5,68 @@ import bcryptjs from "bcryptjs";
 export const getUsuario = async (req, res) => {
   try {
     const usuarioDB = (await conection()).Usuarios;
-    const usuarios = await usuarioDB.find({}).toArray();
+
+    const usuarios = await usuarioDB.aggregate([
+      {
+        $lookup: {
+          from: 'Empleados', // Nombre de la colección de empleados
+          localField: 'Empleado',
+          foreignField: '_id',
+          as: 'empleadoInfo'
+        }
+      },
+      { 
+        $project: {
+          usuario: 1,
+          password: 1,
+          estado: 1,
+          empleadoInfo: 1
+        }
+      }
+    ]).toArray();
+
     res.json(usuarios);
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: "Hubo un error al mostrar a los usuarios" });
+  }
+};
+
+export const getUsuarioPorId = async (req, res) => {
+  try {
+    const usuarioDB = (await conection()).Usuarios;
+    const usuarioId = req.params.id; // Obtén el ID de los parámetros de la URL
+
+    const usuario = await usuarioDB.aggregate([
+      {
+        $match: { _id: new ObjectId(usuarioId) }
+      },
+      {
+        $lookup: {
+          from: 'Empleados', // Nombre de la colección de empleados
+          localField: 'Empleado',
+          foreignField: '_id',
+          as: 'empleadoInfo'
+        }
+      },
+      {
+        $project: {
+          usuario: 1,
+          password: 1,
+          estado: 1,
+          empleadoInfo: 1
+        }
+      }
+    ]).toArray();
+
+    if (!usuario || !usuario.length) {
+      return res.status(404).json({ error: "Usuario no encontrado" });
+    }
+
+    res.json(usuario[0]);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "Hubo un error al buscar al usuario" });
   }
 };
 

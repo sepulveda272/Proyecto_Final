@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getUsuario,postUsuario,deleteUsuario, updateUsuario } from "../controllers/usuario.controller.js";
+import { getUsuario,postUsuario,deleteUsuario, updateUsuario,getUsuarioPorId } from "../controllers/usuario.controller.js";
 import {validateJWT} from "../middlewares/validate.jwt.js"
 import validateDocuments from '../middlewares/validate.documents.js'
 import { check } from "express-validator";
@@ -7,6 +7,7 @@ import { check } from "express-validator";
 const router = Router();
 
 router.get("/", getUsuario);
+router.get("/:id",getUsuarioPorId)
 router.post("/", [
    validateJWT,
    check('Empleado', 'No es un ID válido').isMongoId(),
