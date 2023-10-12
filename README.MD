@@ -7,13 +7,13 @@
 
 #### FIGMA
 
-* Link de el figma
+* https://www.figma.com/file/gulJY98BvWY7AS5ZjjYkes/Untitled?type=design&node-id=0-1&mode=design
 
 Lo va a llevar a esta pagina ☝️☝️
 
 Eso es lo que va a mostrar 👇👇
 
-VA LA IMAGEN
+![Alt text](./Evidencias/figma.png)
 
 #### DIAGRAMA DE LA DATABASE
 
@@ -23,7 +23,7 @@ Lo va a llevar a esta pagina ☝️☝️
 
 Eso es lo que va a mostrar 👇👇
 
-VA LA IMAGEN
+![Alt text](./Evidencias/Kario_Media.png)
 
 #### SWAGGER
 
