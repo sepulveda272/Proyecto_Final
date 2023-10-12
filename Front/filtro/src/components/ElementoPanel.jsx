@@ -141,8 +141,8 @@ const ElementoPanel = () => {
                   <tr key={index} className='body_filas'>
                     <td colSpan={9}>
                       <div className='fila1'>
-                        <p className='p1'><span>{indicador.Indicador}</span></p>
-                        <p className='p2'><span>{indicador.Descripcion}</span></p>
+                        <p className='p1'><span>{indicador.Indicador.substring(0, 20)}</span></p>
+                        <p className='p2'><span>{indicador.Descripcion.substring(0, 20)}...</span></p>
                         <p className='p3'>{indicador.Categoria}</p>
                         <p className='p4'>{indicador.FechaInicio.substring(0, 10)}</p>
                         <p className='p5'>{indicador.FechaFinal.substring(0, 10)}</p>
