@@ -6,7 +6,10 @@ import { check } from "express-validator";
 
 const router = Router();
 
-router.get("/", getReportes);
+router.get("/",[
+    validateJWT,
+    validateDocuments
+ ], getReportes);
 router.post("/", [
     validateJWT,
     check("NombreReporte","NombreReporte es obligatorio").not().isEmpty(),

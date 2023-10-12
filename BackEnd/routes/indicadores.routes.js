@@ -6,7 +6,10 @@ import { check } from "express-validator";
 
 const router = Router();
 
-router.get("/", getIndicadores);
+router.get("/",[
+    validateJWT,
+    validateDocuments
+ ], getIndicadores);
 router.post("/", [
     validateJWT,
     check("Indicador","Indicador es obligatorio").not().isEmpty(),

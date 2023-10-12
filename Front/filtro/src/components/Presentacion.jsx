@@ -2,33 +2,35 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 function Presentacion() {
-  const [user, setUser] = useState([]);
-  
-  // Mueve la función getCookie aquí para que esté disponible antes de su uso
+  const [user, setUser] = useState(null); // Inicializa user como null
+
   const getCookie = (name) => {
     const value = `; ${document.cookie}`;
-    console.log(value);
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
   };
 
-  const id = getCookie('user_id'); // Obtén el valor de la cookie 'user_id'
-  console.log(id);
+  const id = getCookie('idCokki');
+  console.log('ID de la cookie:', id); // Agrega un log para verificar el valor de la cookie
 
   useEffect(() => {
     if (!id) {
       // Manejar el caso en que la cookie 'user_id' no está presente
+      console.log('Cookie de ID no encontrada');
       return;
     }
 
     axios.get(`http://localhost:5026/usuarios/${id}`)
       .then((res) => {
+        console.log('Respuesta de la API:', res.data); // Agrega un log para verificar la respuesta de la API
         setUser(res.data);
       })
       .catch((error) => {
         console.error('Error al obtener datos:', error);
       });
   }, [id]);
+
+  console.log('Valor de user:', user); // Agrega un log para verificar el valor de user
 
   return (
     <div className='form-position'>
@@ -46,11 +48,11 @@ function Presentacion() {
               </h3>
             </div>
             <h1 className='denuevo'>Bienvenido de nuevo</h1>
-            {user.map((userData) => (
+            {user.empleadoInfo.map((userData) => (
               <div key={userData._id}>
-                <img className='entradaIma' src={userData.empleadoInfo[0].Imagen} alt='imagen' />
-                <h1 className='name_user'>{userData.empleadoInfo[0].Nombre} {userData.empleadoInfo[0].Apellido}</h1>
-                <p className='rol_user'>{userData.empleadoInfo[0].Cargo}</p>
+                <img className='entradaIma' src={userData.Imagen} alt='imagen' />
+                <h1 className='name_user'>{userData.Nombre} {userData.Apellido}</h1>
+                <p className='rol_user'>{userData.Cargo}</p>
               </div>
             ))}
           </div>
