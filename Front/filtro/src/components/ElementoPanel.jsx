@@ -156,6 +156,7 @@ const ElementoPanel = () => {
             </tbody>
           </table>
         </div>
+        <button className='ag_ele'>Añadir Elementos</button>
       </div>
       )}
       {showEditar && <Editar onBack={handleBackClick} />}
