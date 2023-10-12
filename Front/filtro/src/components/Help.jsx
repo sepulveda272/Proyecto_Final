@@ -1,7 +1,8 @@
 import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser'
 import Nav from './Nav';
-import '../css/Help.css'
+import '../css/Help.css';
+import { Link } from 'react-router-dom';
 
 const Help = () => {
 
@@ -43,6 +44,7 @@ const hendleSubmit = (event) =>{
               <input name='des' class="my-input" type="text"  placeholder="Descripción" required />
               </fieldset>
               <button class="my-button" type="submit">Enviar</button>
+              <Link to="/panel"><button class="my-button">Cancelar</button></Link>
             </div>
           </form>
         </div>

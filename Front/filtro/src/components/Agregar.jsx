@@ -2,7 +2,7 @@ import React from 'react';
 
 const Agregar = ({ onBack }) => {
   const handleBackClick = () => {
-    onBack(); // Llama a la función para volver a la vista de la tabla
+    onBack();
   };
 
   return (
