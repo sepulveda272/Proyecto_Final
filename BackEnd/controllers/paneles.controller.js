@@ -4,7 +4,7 @@ import { client, conection } from "../database/conection.js";
 export const getPaneles = async (req, res) => {
   try {
     const panelDB = (await conection()).Paneles;
-    const panel = await panelDB.find({}).toArray();
+    const panel = await panelDB.find({ estado: true }).toArray();
     res.json(panel);
   } catch (error) {
     console.log(error);

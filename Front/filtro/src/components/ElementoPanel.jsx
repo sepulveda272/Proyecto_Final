@@ -136,75 +136,77 @@ const ElementoPanel = () => {
                     </th>
                   </tr>
                 </thead>
-            <tbody className='body_table'>
-              {indicadores.map((indicador, index) => (
-                  <tr key={index} className='body_filas'>
-                    <td colSpan={9}>
-                      <div className='fila1'>
-                        <p className='p1'><span>{indicador.Indicador}</span></p>
-                        <p className='p2'><span>{indicador.Descripcion}</span></p>
-                        <p className='p3'>{indicador.Categoria}</p>
-                        <p className='p4'>{indicador.FechaInicio.substring(0, 10)}</p>
-                        <p className='p5'>{indicador.FechaFinal.substring(0, 10)}</p>
-                        <p className='p6'>{indicador.Formula}</p>
-                        <p className='p7'>{indicador.Frecuencia}</p>
-                        <p className='p8'>
-                          <div className="circle-loader">
-                            <svg width="60" height="60">
-                              <circle
-                                className="circle"
-                                cx="30"
-                                cy="30"
-                                r="27"
-                                stroke={getCircleColor(indicador.Cumplimiento)}
-                                strokeWidth="7"
-                                fill="none"
-                                strokeDasharray="251"
-                                strokeDashoffset={(251 * (100 - indicador.Cumplimiento)) / 100}
-                                style={{ animationDirection: animationDirection }}
-                              />
-                              <text x="30" y="30" textAnchor="middle" dy="0.3em" className="percentage">
-                                {indicador.Cumplimiento}%
-                              </text>
-                            </svg>
-                          </div>
-                        </p>
-                        <p className='p9'>{indicador.Area}</p>
-                      </div>
-                    </td>
-                    <td className='border_no'>
-                      <div className='menu-container'>
-                        {menuOpenByRow[indicador._id] ? (
-                          <>
-                            <div className='btns_menu'>
-                              <div className='btns_menu2'>
-                                <button className="menu-button btn_edit" onClick={handleEditarClick}>
-                                  <span className="material-symbols-outlined">edit</span>
-                                </button>
-                                <button className="menu-button btn_del" onClick={() => handleDeleteClick(indicador._id)}>
-                                  <span className="material-symbols-outlined icon_delete">Delete</span>
-                                </button>
-                              </div>
-                              <div className='btns_menu2 '>
-                                <button className="menu-button btn_pre" onClick={handleViewClick}>
-                                  <span className="material-symbols-outlined">preview</span>
-                                </button>
-                                <button className="menu-button btn_close" onClick={() => toggleMenu(indicador._id)}>
-                                  <span className="material-symbols-outlined icon_close">x</span>
-                                </button>
-                              </div>
+                <div className='scroll-div'>
+                  <tbody className='body_table'>
+                    {indicadores.map((indicador, index) => (
+                        <tr key={index} className='body_filas'>
+                          <td colSpan={9}>
+                            <div className='fila1'>
+                              <p className='p1'><span>{indicador.Indicador}</span></p>
+                              <p className='p2'><span>{indicador.Descripcion}</span></p>
+                              <p className='p3'>{indicador.Categoria}</p>
+                              <p className='p4'>{indicador.FechaInicio.substring(0, 10)}</p>
+                              <p className='p5'>{indicador.FechaFinal.substring(0, 10)}</p>
+                              <p className='p6'>{indicador.Formula}</p>
+                              <p className='p7'>{indicador.Frecuencia}</p>
+                              <p className='p8'>
+                                <div className="circle-loader">
+                                  <svg width="60" height="60">
+                                    <circle
+                                      className="circle"
+                                      cx="30"
+                                      cy="30"
+                                      r="27"
+                                      stroke={getCircleColor(indicador.Cumplimiento)}
+                                      strokeWidth="7"
+                                      fill="none"
+                                      strokeDasharray="251"
+                                      strokeDashoffset={(251 * (100 - indicador.Cumplimiento)) / 100}
+                                      style={{ animationDirection: animationDirection }}
+                                    />
+                                    <text x="30" y="30" textAnchor="middle" dy="0.3em" className="percentage">
+                                      {indicador.Cumplimiento}%
+                                    </text>
+                                  </svg>
+                                </div>
+                              </p>
+                              <p className='p9'>{indicador.Area}</p>
                             </div>
-                          </>
-                        ) : (
-                          <span className='material-symbols-outlined icon_menu' onClick={() => toggleMenu(indicador._id)}>
-                            Menu
-                          </span>
-                        )}
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-            </tbody>
+                          </td>
+                          <td className='border_no'>
+                            <div className='menu-container'>
+                              {menuOpenByRow[indicador._id] ? (
+                                <>
+                                  <div className='btns_menu'>
+                                    <div className='btns_menu2'>
+                                      <button className="menu-button btn_edit" onClick={handleEditarClick}>
+                                        <span className="material-symbols-outlined">edit</span>
+                                      </button>
+                                      <button className="menu-button btn_del" onClick={() => handleDeleteClick(indicador._id)}>
+                                        <span className="material-symbols-outlined icon_delete">Delete</span>
+                                      </button>
+                                    </div>
+                                    <div className='btns_menu2 '>
+                                      <button className="menu-button btn_pre" onClick={handleViewClick}>
+                                        <span className="material-symbols-outlined">preview</span>
+                                      </button>
+                                      <button className="menu-button btn_close" onClick={() => toggleMenu(indicador._id)}>
+                                        <span className="material-symbols-outlined icon_close">x</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </>
+                              ) : (
+                                <span className='material-symbols-outlined icon_menu' onClick={() => toggleMenu(indicador._id)}>
+                                  Menu
+                                </span>
+                              )}
+                            </div>
+                          </td>
+                        </tr>
+                      ))}
+                  </tbody>
+                </div>
           </table>
         </div>
         <button className='ag_ele' onClick={handleAgregateClick}>Añadir Elementos</button>

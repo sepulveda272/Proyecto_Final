@@ -24,6 +24,12 @@
   
     /* Otras propiedades de estilo para los botones */
   }
+
+  .scroll-div{
+    height: 550px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
   
   @keyframes slideIn {
     from {

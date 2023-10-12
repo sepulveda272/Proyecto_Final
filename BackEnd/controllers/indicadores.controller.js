@@ -4,12 +4,13 @@ import { client, conection } from "../database/conection.js";
 export const getIndicadores = async (req, res) => {
   try {
     const indicadorDB = (await conection()).Indicadores;
-    const indicador = await indicadorDB.find({}).toArray();
-    res.json(indicador);
+    const indicadores = await indicadorDB.find({ estado: true }).toArray();
+    res.json(indicadores);
   } catch (error) {
     console.log(error);
   }
 };
+
 
 export const postIndicador = async (req, res) => {
   try {

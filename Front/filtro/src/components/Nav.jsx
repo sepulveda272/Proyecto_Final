@@ -69,9 +69,9 @@ const Nav = () => {
           <a href="#">Añadir</a>
         </div>
         <div className='aling_menu refresh'>
-          <img src="../actualizar.png" alt="Logo" />
-          <Link to="/panel">Refrescar</Link>
-        </div>
+      <img src="../actualizar.png" alt="Logo" />
+      <Link to="/panel" onClick={() => window.location.reload()}>Refrescar</Link>
+    </div>
         <div className='aling_menu delete'>
           <img src="../Icon material-delete-forever.svg" alt="Logo" />
           <a href="#">Eliminar</a>
