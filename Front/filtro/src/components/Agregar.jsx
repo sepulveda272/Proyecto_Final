@@ -5,22 +5,7 @@ const Agregar = ({ onBack }) => {
     onBack();
   };
 
-  const [indicadores, setIndicadores] = useState([]);
-
-
-  useEffect(() => {
-    fetch('http://localhost:5026/indicadores')
-      .then((response) => response.json())
-      .then((data) => {ila
-        const initialMenuState = data.reduce((acc, indicador) => {
-          acc[indicador.id] = false;
-          return acc;
-        }, {});
-        setIndicadores(data);
-        setMenuOpenByRow(initialMenuState);
-      })
-      .catch((error) => console.error('Error fetching data:', error));
-  }, []);
+ 
 
   return (
     <div className="Agregate_header">
