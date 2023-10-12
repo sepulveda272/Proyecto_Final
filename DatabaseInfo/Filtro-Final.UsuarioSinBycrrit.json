@@ -1,0 +1,8 @@
+{
+    "Empleado": {
+      "$oid": "652440b0484eaa758a295565"
+    },
+    "usuario": "juan",
+    "password": "12345",
+    "estado": true
+}
