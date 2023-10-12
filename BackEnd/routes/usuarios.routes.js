@@ -6,22 +6,15 @@ import { check } from "express-validator";
 
 const router = Router();
 
-router.get("/",[
-   validateJWT,
-   validateDocuments
-], getUsuario);
+router.get("/", getUsuario);
 router.get("/:id",getUsuarioPorId)
 router.post("/", [
-   validateJWT,
    check('Empleado', 'No es un ID válido').isMongoId(),
    check("usuario","usuairo es obligatorio").not().isEmpty(),
    check("password","password es obligatorio").not().isEmpty(),
    validateDocuments
 ],postUsuario);
-router.delete("/:id", [
-   validateJWT,
-   validateDocuments
-],deleteUsuario);
+router.delete("/:id",deleteUsuario);
 router.put("/:id",updateUsuario)
 
 /**

@@ -6,20 +6,13 @@ import { check } from "express-validator";
 
 const router = Router();
 
-router.get("/",[
-   validateJWT,
-   validateDocuments
-], getPaneles);
+router.get("/", getPaneles);
 router.post("/", [
-   validateJWT,
    check("Nombre","Nombre es obligatorio").not().isEmpty(),
    check("Descricao","Descricao es obligatorio").not().isEmpty(),
    validateDocuments
 ],postPanel);
-router.delete("/:id", [
-   validateJWT,
-   validateDocuments
-],deletePanel);
+router.delete("/:id", deletePanel);
 router.put("/:id", updatePanel)
 
 /**

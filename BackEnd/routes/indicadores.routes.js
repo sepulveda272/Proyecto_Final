@@ -6,12 +6,8 @@ import { check } from "express-validator";
 
 const router = Router();
 
-router.get("/",[
-    validateJWT,
-    validateDocuments
- ], getIndicadores);
+router.get("/", getIndicadores);
 router.post("/", [
-    validateJWT,
     check("Indicador","Indicador es obligatorio").not().isEmpty(),
     check("Descripcion","Descripcion es obligatorio").not().isEmpty(),
     check("Categoria","Categoria es obligatorio").not().isEmpty(),
@@ -26,10 +22,7 @@ router.post("/", [
     check('Panel', 'No es un ID válido').isMongoId(),
     validateDocuments
 ],postIndicador);
-router.delete("/:id", [
-    validateJWT,
-    validateDocuments
-],deleteIndicador);
+router.delete("/:id",deleteIndicador);
 router.put("/:id", updateIndicador)
 
 /**

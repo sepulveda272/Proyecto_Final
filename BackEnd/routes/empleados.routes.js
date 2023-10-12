@@ -6,12 +6,8 @@ import validateDocuments from '../middlewares/validate.documents.js'
 
 const router = Router();
 
-router.get("/",[
-   validateJWT,
-   validateDocuments
-],getEmpleado);
+router.get("/",getEmpleado);
 router.post("/", [
-   validateJWT,
    check("Nombre","Nombre es obligatorio").not().isEmpty(),
    check("Apellido","Apellido es obligatorio").not().isEmpty(),
    check("Telefono","Telefono es obligatorio").not().isEmpty(),
@@ -23,10 +19,7 @@ router.post("/", [
    check("Imagen","Imagen es obligatorio").not().isEmpty(),
    validateDocuments
 ],postEmpleado);
-router.delete("/:id",[
-   validateJWT,
-   validateDocuments
-], deleteEmpleado);
+router.delete("/:id", deleteEmpleado);
 router.put("/:id", updateEmpleado)
 
 /**
