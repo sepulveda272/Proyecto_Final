@@ -153,6 +153,72 @@ const ElementoPanel = () => {
                   </div>
                 </td>
               </tr>
+              <tr className='body_filas'>
+                <td colSpan={9}>
+                  <div className='fila1'>
+                    <p className='p1'><span>Modelado 3D</span></p>
+                    <p className='p2'><span>Interes por ...</span></p>
+                    <p className='p3'>Baja</p>
+                    <p className='p4'>12/05/21</p>
+                    <p className='p5'>12/12/21</p>
+                    <p className='p6'>Met.Agil</p>
+                    <p className='p7'>1/4</p>
+                    <p className='p8'>
+                    <div className="circle-loader">
+                            <svg width="60" height="60">
+                              <circle
+                                className="circle"
+                                cx="30"
+                                cy="30"
+                                r="27"
+                                stroke={getCircleColor()}
+                                strokeWidth="7"
+                                fill="none"
+                                strokeDasharray="251"
+                                strokeDashoffset={(251 * (100 - percentage)) / 100}
+                                style={{ animationDirection: animationDirection }}
+                              />
+                              <text x="30" y="30" textAnchor="middle" dy="0.3em" className="percentage">
+                                {percentage}%
+                              </text>
+                            </svg>
+                          </div>
+                    </p>
+                    <p className='p9'>Marketing</p>
+                  </div>
+                </td>
+                <td className='border_no'>
+
+                  <div className='menu-container'>
+                  {isMenuOpen ? (
+                    <>
+                    <div className='btns_menu'>
+                      <div className='btns_menu2'>
+                        <button className="menu-button btn_edit" onClick={handleEditarClick}>
+                          <span class="material-symbols-outlined">edit</span>
+                        </button>
+                        <button className="menu-button btn_del" onClick={handleDeleteClick}>
+                          <span className="material-symbols-outlined icon_delete">Delete</span>
+                        </button>
+                      </div>
+                      <div className='btns_menu2 '>
+                        <button className="menu-button btn_pre" onClick={handleViewClick}>
+                          <span class="material-symbols-outlined">preview</span>
+                        </button>
+                        <button className="menu-button btn_close" onClick={() => setIsMenuOpen(false)}>
+                          <span className="material-symbols-outlined icon_close">x</span>
+                        </button>
+                      </div>
+                    </div>
+                    </>
+                  ) : (
+                    <span className='material-symbols-outlined icon_menu' onClick={() => setIsMenuOpen(true)}>
+                      Menu
+                    </span>
+                  )}
+                  </div>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
