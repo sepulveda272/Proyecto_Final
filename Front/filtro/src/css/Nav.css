@@ -25,31 +25,11 @@
 
 .nav {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  /* justify-content: space-between; */
+  flex-direction: row;
   background-color: #ffffff;
-  border-bottom: 3px solid #707070;
-  animation: ajustarNav 0.3s ease-in-out;
-}
-
-.reorganization{
-  display: flex;
-    flex-direction: row;
-    margin: 0.5rem 3.5rem;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-logo{
-  margin-left: 5%;
-  margin-right: 12%;
-}
-
-.nav-logolt img {
-top: 35px;
-left: 1769px;
-width: 19px;
-height: 19px;
+  border: 1px solid #707070;
+  height: 81.5px;
 }
 
 
@@ -101,6 +81,8 @@ height: 19px;
   border: 1px solid #ffff;
   width: 108px;
   height: 31px;
+  margin-left: 188px;
+  margin-top: 31px;
 }
 
 .anadir img{
@@ -112,6 +94,8 @@ height: 19px;
   border: 1px solid #ffff;
   width: 127.85px;
   height: 26.89px;
+  margin-left: 127.07px;
+  margin-top: 32.06px;
 }
 
 .refresh img{
@@ -123,6 +107,8 @@ height: 19px;
   border: 1px solid #ffff;
   width: 115.98px;
   height: 32.11px;
+  margin-left: 127.07px;
+  margin-top: 29.39px;
 }
 
 .delete img{
@@ -134,6 +120,8 @@ height: 19px;
   border: 1px solid #ffff;
   width: 41.72px;
   height: 37.37px;
+  margin-left: 145.16px;
+  margin-top: 24.13px;
 }
 
 .logo_nav img{
@@ -145,6 +133,8 @@ height: 19px;
   border: 1px solid #ffff;
   width: 144.04px;
   height: 38px;
+  margin-left: 237.14px;
+  margin-top: 23.5px;
 }
 
 .reportar img{
@@ -156,6 +146,8 @@ height: 19px;
   border: 1px solid #ffff;
   width: 115.31px;
   height: 34.05px;
+  margin-left: 127.07px;
+  margin-top: 27.45px;
 }
 
 .ayuda img{
@@ -167,6 +159,8 @@ height: 19px;
   border: 1px solid #ffff;
   width: 19.04px;
   height: 19.05px;
+  margin-left: 164.56px;
+  margin-top: 34.73px;
 }
 
 .config{
@@ -178,6 +172,8 @@ height: 19px;
   border: 1px solid #ffff;
   width: 20.62px;
   height: 20.17px;
+  margin-left: 21.18px;
+  margin-top: 34.73px;
 }
 
 .noti{
