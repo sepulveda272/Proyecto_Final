@@ -275,3 +275,18 @@ table {
 .verInfo{
    color: #000000;
 }
+
+.ag_ele{
+    background-color: #FF6F2C;
+    width: 336px;
+    height: 70px;
+    border-radius: 35px;
+    border: #FF6F2C;
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 11.5px;
+}
+
+.ag_ele:hover{
+    background-color: #d65c23;
+}
