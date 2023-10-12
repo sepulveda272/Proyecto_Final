@@ -31,7 +31,7 @@ export const login = async (req,res=response) =>{
 
         const token = await generateJWT(user._id)
         res.cookie("token", token)
-        res.cookie('user_id', user._id, { httpOnly: true });
+        res.cookie("idCokki", user._id)
 
         res.json({
            user,
