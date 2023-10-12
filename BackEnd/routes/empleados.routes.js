@@ -6,7 +6,10 @@ import validateDocuments from '../middlewares/validate.documents.js'
 
 const router = Router();
 
-router.get("/", getEmpleado);
+router.get("/",[
+   validateJWT,
+   validateDocuments
+],getEmpleado);
 router.post("/", [
    validateJWT,
    check("Nombre","Nombre es obligatorio").not().isEmpty(),
