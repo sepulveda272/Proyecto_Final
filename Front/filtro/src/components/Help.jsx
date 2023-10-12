@@ -24,9 +24,9 @@ const hendleSubmit = (event) =>{
         <div>
         <Nav />
         <div className='App-header'>
-          <form ref={refForm} onSubmit={hendleSubmit} action='' class="formulario">
+          <form ref={refForm} onSubmit={hendleSubmit} action='' class="">
             
-            <div className='ayudad'><h1>Help</h1><br/>
+            <div className='formulario z'><h1>Help</h1><br/>
               <fieldset>
                 <h3>Nombre</h3>
               <input name='from_name' class="my-input" type="text" placeholder="Nombre" required />
