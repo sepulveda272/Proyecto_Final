@@ -137,6 +137,7 @@ body::before {
   height: 50px;
   border: 1px solid #707070;
   border-radius: 20px;
+  font-size: 25px;
 }
 
 .form-btn{

@@ -1,13 +1,22 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import emailjs from '@emailjs/browser'
 import Nav from './Nav';
 import '../css/Help.css'
 
 const Help = () => {
+
+const refForm = useRef();
+
+const hendleSubmit = (event) =>{
+  event.preventDefault();
+  
+}
+
     return (
         <div>
         <Nav />
         <div className='App-header'>
-          <form class="formulario" action="https://formsubmit.co/sbstzuluaga@gmail.com" method="POST">
+          <form class="formulario">
             
             <div className='ayudad'><h1>Help</h1><br/>
               <h3>Nombre</h3>
