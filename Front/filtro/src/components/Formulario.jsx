@@ -58,80 +58,45 @@ const Formulario = () => {
     <div>
       <div className="App-header">
         {!mostrarInicio && (
-          <div className="form-container">
-            <div className='superior'>
-              <img className="logito_form" src="../KARIO_LOGO.png" alt="KARIO Logo" />
-              <h3 className='media'>
-                <p>M</p>
-                <p>E</p>
-                <p>D</p>
-                <p>I</p>
-                <p>A</p>
-              </h3>
-            </div>
-            <h2 className='bienvenida'>
-              Bienvenido al panel digital de KARIO Media
-            </h2>
-            <p className='descrip'>Por favor ingresa los siguientes datos para ingresar a la plataforma</p>
-            <form className="form">
-              <div className="form-content">
-                <div className='con_form_user'>
-                  <h3 className='label_text'>Usuario</h3>
-                  <input type="text" className="input" value={usuario} onChange={(e)=> setUsuario(e.target.value)} />
-                </div>
-                <div className='con_form_password'>
-                  <h3 className='label_text'>Contraseña</h3>
-                  <input type="password" className="input" value={password} onChange={(e)=> setPAssword(e.target.value)} />
-                </div>
-                <div>
-                  <button type='button' onClick={()=>handleIniciarClick()} className="form-btn">
-                    Ingresar al panel
-                  </button>
-                </div>
+        <div className='form-position'>
+            <div className="form-containerqq">
+              <div className='superior'>
+                <img className="logito_form" src="../KARIO_LOGO.png" alt="KARIO Logo" />
+                <h3 className='media'>
+                  <p>M</p>
+                  <p>E</p>
+                  <p>D</p>
+                  <p>I</p>
+                  <p>A</p>
+                </h3>
               </div>
-            </form>
+              <h2 className='bienvenida'>
+                Bienvenido al panel digital de KARIO Media
+              </h2>
+              <p className='descrip'>Por favor ingresa los siguientes datos para ingresar a la plataforma</p>
+              <form className="form">
+                <div className="form-content">
+                  <div className='con_form_user'>
+                    <h3 className='label_text'>Usuario</h3>
+                    <input type="text" className="input" value={usuario} onChange={(e)=> setUsuario(e.target.value)} />
+                  </div>
+                  <div className='con_form_password'>
+                    <h3 className='label_text'>Contraseña</h3>
+                    <input type="password" className="input" value={password} onChange={(e)=> setPAssword(e.target.value)} />
+                  </div>
+                  <div>
+                    <button type='button' onClick={()=>handleIniciarClick()} className="form-btn">
+                      Ingresar al panel
+                    </button>
+                  </div>
+                </div>
+              </form>
 
-{
-  !mostrarInicio? (
-    <div className='form-position'>
-    <div className="form-containerqq">
-      <div className='superior'>
-        <img className="logito_form" src="../KARIO_LOGO.png" alt="KARIO Logo" />
-        <h3 className='media'>
-          <p>M</p>
-          <p>E</p>
-          <p>D</p>
-          <p>I</p>
-          <p>A</p>
-        </h3>
-      </div>
-      <h2 className='bienvenida'>
-        Bienvenido al panel digital de KARIO Media
-      </h2>
-      <p className='descrip'>Por favor ingresa los siguientes datos para ingresar a la plataforma</p>
-      <form className="form">
-        <div className="form-content">
-          <div className='con_form_user'>
-            <h3 className='label_text'>Usuario</h3>
-            <input type="email" className="input" />
+              <p className='problemas_form'>Tienes problemas para ingresar? Por favor contactarse con asistencia técnica lo más pronto posible</p>
+            </div>
           </div>
-          <div className='con_form_password'>
-            <h3 className='label_text'>Contraseña</h3>
-            <input type="password" className="input" />
-          </div>
-          <div>
-            <button onClick={handleIniciarClick} className="form-btn">
-              Ingresar al panel
-            </button>
-          </div>
-        </div>
-      </form>
-
-      <p className='problemas_form'>Tienes problemas para ingresar? Por favor contactarse con asistencia técnica lo más pronto posible</p>
-    </div>
-    </div>
-  ) :  <Presentacion />
-}
+        )}
+        {mostrarInicio && <Presentacion />}
       </div>
     </div>
   );
