@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Editar from './Editar.jsx';
 import VerInformacion from './VerInformacion.jsx';
+import Agregar from './Agregar.jsx';
 
 import '../css/ElementoPanel.css';
 
@@ -10,6 +11,7 @@ const ElementoPanel = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showTable, setShowTable] = useState(true);
   const [showEditar, setShowEditar] = useState(false);
+  const [showAgregar, setShowAgregar] = useState(false);
   const [showVerInformacion, setShowVerInformacion] = useState(false);
 
   useEffect(() => {
@@ -38,19 +40,31 @@ const ElementoPanel = () => {
     setShowTable(false);
     setShowEditar(true);
     setShowVerInformacion(false);
+    setShowAgregar(false);
   };
 
   const handleViewClick = () => {
     setShowTable(false);
     setShowEditar(false);
     setShowVerInformacion(true);
+    setShowAgregar(false);
+  };
+
+  const handleAgregateClick = () => {
+    setShowTable(false);
+    setShowEditar(false);
+    setShowVerInformacion(false);
+    setShowAgregar(true);
   };
 
   const handleBackClick = () => {
     setShowTable(true);
     setShowEditar(false);
     setShowVerInformacion(false);
+    setShowAgregar(false);
   };
+
+  
 
   const handleDeleteClick = () => {
     const confirmDelete = window.confirm('¿Estás seguro de que quieres eliminar este elemento?');
@@ -222,11 +236,12 @@ const ElementoPanel = () => {
             </tbody>
           </table>
         </div>
-        <button className='ag_ele'>Añadir Elementos</button>
+        <button className='ag_ele' onClick={handleAgregateClick}>Añadir Elementos</button>
       </div>
       )}
       {showEditar && <Editar onBack={handleBackClick} />}
       {showVerInformacion && <VerInformacion onBack={handleBackClick} />}
+      {showAgregar && <Agregar onBack={handleBackClick} />}
     </div>
   );
 };
