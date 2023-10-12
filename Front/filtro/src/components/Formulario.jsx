@@ -28,6 +28,7 @@ const Formulario = () => {
       .then((response) => {
         setMostrarInicio(true);
         document.cookie = `token = ${response.data.token}`;
+        document.cookie = `idCokki = ${response.data.user._id}`
         setUser(response.data.userData); // Almacena la información del usuario/empleado en el estado
         console.log(response);
       })
