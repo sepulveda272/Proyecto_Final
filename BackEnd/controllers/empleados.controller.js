@@ -4,7 +4,7 @@ import { client, conection } from "../database/conection.js";
 export const getEmpleado = async (req, res) => {
   try {
     const empleadoDB = (await conection()).Empleados;
-    const empleado = await empleadoDB.find({}).toArray();
+    const empleado = await empleadoDB.find({ estado: true }).toArray();
     res.json(empleado);
   } catch (error) {
     console.log(error);

@@ -4,7 +4,7 @@ import { client, conection } from "../database/conection.js";
 export const getReportes = async (req, res) => {
   try {
     const reportesDB = (await conection()).Reportes;
-    const reporte = await reportesDB.find({}).toArray();
+    const reporte = await reportesDB.find({ estado: true }).toArray();
     res.json(reporte);
   } catch (error) {
     console.log(error);
