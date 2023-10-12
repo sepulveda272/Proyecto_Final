@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
 const Agregar = ({ onBack }) => {
   const handleBackClick = () => {
     onBack();
@@ -16,18 +15,28 @@ const Agregar = ({ onBack }) => {
     frecuencia: '',
     cumplimiento: '',
     area: '',
-    empleados: '',
-    tareas: '',
+    tareas: [],
+    empleados: [],
     panel: '',
   });
   
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  
+    // Si el campo es "tareas" o "empleados", agrega el nuevo valor al arreglo existente
+    if (name === "tareas" || name === "empleados") {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: [...prevData[name], value],
+      }));
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    }
+  };  
+  
 
   const handleAgregarClick = (e) => {
     e.preventDefault();
