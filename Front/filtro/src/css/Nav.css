@@ -1,8 +1,32 @@
 
+@keyframes desplegarPanel {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.panel {
+  background-color: #ffffff00;
+  position: absolute;
+  top: 90px;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: desplegarPanel 0.3s ease-in-out;
+}
+
 .nav {
   display: flex;
-  /* justify-content: space-between; */
-  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: #ffffff;
   border-bottom: 3px solid #707070;
   animation: ajustarNav 0.3s ease-in-out;
@@ -29,6 +53,16 @@ height: 19px;
 }
 
 
+.nav-logol img {
+  top: 32px;
+  left: 423px;
+  width: 27px;
+  height: 27px;
+  margin-right: 2%;
+}
+
+
+
 
 .aling_menu{
   display: flex;
@@ -40,6 +74,23 @@ height: 19px;
   font-weight: bold;
   cursor: pointer;
 }
+
+.aling_menu {
+  margin: 10px;
+  text-align: center; 
+}
+
+.aling_menu img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .aling_menu {
+    margin: 5px; 
+  }
+}
+
 
 .aling_menu a{
   text-decoration: none;
@@ -142,3 +193,66 @@ height: 19px;
   margin-left: 21.18px;
   margin-bottom: 0px;
 }
+
+.custom-button {
+  width: 200px;
+  height: 50px;
+  font-size:small;
+  background-color: #FF6F2C;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; 
+  transition: background-color 0.2s;
+}
+
+.custom-button:hover {
+  background-color: #c95f2f; 
+}
+
+.logout-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.custom-button {
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+
+
+
+.panel.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+@keyframes desplegarPanel {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.botonbajo {
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  animation: desplegarPanel 0.3s ease-in-out;
+}
+
