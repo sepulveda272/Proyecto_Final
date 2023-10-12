@@ -1,0 +1,71 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.form-position{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+  .form-container-presentqq {
+    background-color: #FFFFFF;
+    width: 94rem;
+    height: 55rem;
+    border: 1px solid #ffffff;
+    border-radius: 67px;
+    animation: fadeIn 0.5s ease;
+  }
+  
+
+.form-container-presentqq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.denuevo{
+    font-size: 40px;
+    font-family: 'Myriad Pro', sans-serif;
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    height: 40px;
+    margin-top: 41.05px;
+    letter-spacing: -0.2px;
+}
+
+.entradaIma{
+    width: 118px;
+    height: 118px;
+    margin-top: 20px;
+    border-radius: 96px;
+}
+
+.name_user{
+    font-size: 40px;
+    font-family: 'Myriad Pro', sans-serif;
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    height: 40px;
+    margin-top: 23px;
+}
+
+
+.rol_user{
+    font-size: 20px;
+    font-family: "Myriad Pro Light";
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    height: 20px;
+    margin-top: 18px;
+}
