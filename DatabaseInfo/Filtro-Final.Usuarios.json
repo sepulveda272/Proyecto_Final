@@ -1,9 +1,9 @@
 {
+      "usuario": "juan",
+      "password": "$2a$10$N8.krsNBXo24VpKT4LyzYu/7fNOL1Xslu0cUwOG8S3PTRkasW9oR2",
       "Empleado": {
         "$oid": "652440b0484eaa758a295565"
       },
-      "usuario": "juan",
-      "password": "$2a$10$N8.krsNBXo24VpKT4LyzYu/7fNOL1Xslu0cUwOG8S3PTRkasW9oR2",
       "estado": true
   }
 

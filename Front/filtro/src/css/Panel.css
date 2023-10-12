@@ -83,7 +83,7 @@ table {
 
 /* Titulos filas Tabla */
 .title_filas{
-    font-size: 24px;    
+    font-size: 24px;
 }
 
 /* Contenido filas Tablas */
@@ -92,6 +92,7 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 21.5px;
 }
 
 .body_filas td{
@@ -110,6 +111,7 @@ table {
     padding: 12px;
     align-items: center;
     width: 1700px;
+    margin-bottom: -29.5px;
 }
 
 
@@ -273,7 +275,7 @@ table {
 }
 
 .verInfo{
-   color: #000000;
+   color: #ffffff;
 }
 
 .ag_ele{

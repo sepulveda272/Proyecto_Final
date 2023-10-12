@@ -29,8 +29,8 @@
       }
     ],
     "Tareas": ["Terminar el renderizado", "Texturizar Casas"],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -64,8 +64,8 @@
       }
     ],
     "Tareas": ["Terminar el renderizado", "Texturizar Casas"],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -99,8 +99,8 @@
       }
     ],
     "Tareas": ["Analizar datos de ventas", "Ejecutar estrategias de marketing"],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -137,8 +137,8 @@
       "Realizar encuestas de satisfacción",
       "Analizar resultados de encuestas"
     ],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -175,8 +175,8 @@
       "Evaluar la productividad individual",
       "Implementar mejoras en procesos de trabajo"
     ],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -199,7 +199,7 @@
     "Area": "Finanzas",
     "Empleados": [
       {
-        "Empleado":  {
+        "Empleado": {
           "$oid": "652431fcf40776a48e9b0319"
         }
       },
@@ -213,8 +213,8 @@
       "Registrar transacciones financieras",
       "Preparar estados financieros"
     ],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -251,8 +251,8 @@
       "Optimizar procesos de entrega",
       "Realizar seguimiento de entregas"
     ],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -275,7 +275,7 @@
     "Area": "Logística",
     "Empleados": [
       {
-        "Empleado":  {
+        "Empleado": {
           "$oid": "652431fcf40776a48e9b0319"
         }
       },
@@ -289,8 +289,8 @@
       "Realizar conteo de inventario",
       "Gestionar pedidos de productos"
     ],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -327,8 +327,8 @@
       "Realizar inspecciones de seguridad",
       "Implementar medidas de seguridad"
     ],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -365,8 +365,8 @@
       "Analizar la satisfacción del cliente",
       "Implementar estrategias de retención"
     ],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -403,8 +403,8 @@
       "Calcular el costo de adquisición",
       "Optimizar estrategias de adquisición"
     ],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -441,8 +441,8 @@
       "Analizar métricas de marketing",
       "Optimizar campañas de marketing"
     ],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -479,8 +479,8 @@
       "Calcular la tasa de rotación",
       "Implementar estrategias de retención de empleados"
     ],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   },
@@ -517,8 +517,8 @@
       "Calcular el costo de producción",
       "Optimizar procesos de producción"
     ],
-    "Panel":{
-      "oid": "65243c8ef40776a48e9b0323"
+    "Panel": {
+      "$oid": "65243c8ef40776a48e9b0323"
     },
     "estado": true
   }

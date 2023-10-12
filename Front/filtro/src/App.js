@@ -10,6 +10,7 @@ import Presentacion from './components/Presentacion.jsx';
 import './css/Presentacion.css';
 import './css/Panel.css';
 import './css/Loading.css';
+import './css/Agregar.css';
 
 
 
