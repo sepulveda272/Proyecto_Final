@@ -2,16 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Presentacion from './Presentacion.jsx';
-import axios from 'axios'; // Asegúrate de importar axios
-
+import axios from 'axios';
 import '../css/Formulario.css';
 
 const Formulario = () => {
   const [mostrarInicio, setMostrarInicio] = useState(false);
   const [redirigir, setRedirigir] = useState(false);
   const [usuario, setUsuario] = useState('');
-  const [password, setPAssword] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [user, setUser] = useState(null); // Nuevo estado para almacenar la información del usuario o empleado
 
   const handleIniciarClick = () => {
     if (!usuario || !password) {
@@ -19,7 +19,6 @@ const Formulario = () => {
       return;
     }
 
-    // Realizar la solicitud POST para la autenticación del usuario
     axios
       .post("http://localhost:5026/login/logeate", {
         withCredentials: true,
@@ -28,7 +27,8 @@ const Formulario = () => {
       })
       .then((response) => {
         setMostrarInicio(true);
-        document.cookie = (`token = ${response.data.token}`)
+        document.cookie = `token = ${response.data.token}`;
+        setUser(response.data.userData); // Almacena la información del usuario/empleado en el estado
         console.log(response);
       })
       .catch(function (error) {
@@ -50,9 +50,6 @@ const Formulario = () => {
   if (redirigir) {
     return <Navigate to="/panel" />;
   }
-  /* if (redirigir) {
-    return <Navigate to="/panel" />;
-  } */
 
   return (
     <div>
@@ -82,7 +79,7 @@ const Formulario = () => {
                   </div>
                   <div className='con_form_password'>
                     <h3 className='label_text'>Contraseña</h3>
-                    <input type="password" className="input" value={password} onChange={(e)=> setPAssword(e.target.value)} />
+                    <input type="password" className="input" value={password} onChange={(e)=> setPassword(e.target.value)} />
                   </div>
                   <div>
                     <button type='button' onClick={()=>handleIniciarClick()} className="form-btn">
