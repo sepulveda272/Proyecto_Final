@@ -6,10 +6,11 @@ const VerInformacion = ({ onBack }) => {
   };
 
   return (
-    <div>
-      <h1 className='verInfo'>Información Detallada</h1>
-      {/* Agregar contenido de información detallada aquí */}
+    <div className="App-header">
+      <form class="formulario">
+      <h1 className='verInfo'>Ver informacion</h1>
       <button onClick={handleBackClick}>Volver a la tabla</button>
+      </form>
     </div>
   );
 };

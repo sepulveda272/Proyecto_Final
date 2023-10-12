@@ -3,9 +3,9 @@ import React from 'react';
 function Inicio() {
   
   return (
-    <>
+    <div className='form-position'>
       <div className='App-header'>
-        <div className="form-container-present">
+        <div className="form-container-presentqq">
             <div className='superior'>
               <img className="logito_form" src="../KARIO_LOGO.png" alt="KARIO Logo" />
               <h3 className='media'>
@@ -22,7 +22,7 @@ function Inicio() {
           <p className='rol_user'>Usuario Rol</p>
         </div>
       </div>
-    </>
+    </div>
 
   );
 }
