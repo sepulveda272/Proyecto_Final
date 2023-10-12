@@ -10,13 +10,21 @@ const refForm = useRef();
 const hendleSubmit = (event) =>{
   event.preventDefault();
   
+  const serviceId = "service_jmy5wha"
+  const templateId = "template_7v7666d"
+
+  const apikey = "4yzYtB8AFFXxiJsCL"
+
+  emailjs.sendForm(serviceId,refForm.current,templateId, apikey)
+  .the( result => console.log(result.text))
+  .catch( error => console.error(error) )
 }
 
     return (
         <div>
         <Nav />
         <div className='App-header'>
-          <form class="formulario">
+          <form ref={refForm} action='' onSubmit={handleSubmit} class="formulario">
             
             <div className='ayudad'><h1>Help</h1><br/>
               <h3>Nombre</h3>
